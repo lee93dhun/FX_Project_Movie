@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="86.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="463.0" />
+      <Label layoutX="94.0" layoutY="24.0" text="S C R E E N" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnchoice1" layoutX="57.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice1" prefHeight="21.0" prefWidth="30.0" text="1" />
+      <Button fx:id="btnchoice2" layoutX="87.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice2" prefHeight="21.0" prefWidth="30.0" text="2" />
+      <Button fx:id="btnchoice3" layoutX="139.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice3" prefHeight="21.0" prefWidth="30.0" text="3" />
+      <Button fx:id="btnchoice4" layoutX="169.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice4" prefHeight="21.0" prefWidth="30.0" text="4" />
+      <Button fx:id="btnchoice5" layoutX="199.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice5" prefHeight="21.0" prefWidth="30.0" text="5" />
+      <Button fx:id="btnchoice6" layoutX="229.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice6" prefHeight="21.0" prefWidth="30.0" text="6" />
+      <Button fx:id="btnchoice7" layoutX="259.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice7" prefHeight="21.0" prefWidth="30.0" text="7" />
+      <Button fx:id="choice8" layoutX="289.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice8" prefHeight="21.0" prefWidth="30.0" text="8" />
+      <Button fx:id="btnchoice9" layoutX="340.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice9" prefHeight="21.0" prefWidth="30.0" text="9" />
+      <Button fx:id="btnchoice10" layoutX="370.0" layoutY="142.0" mnemonicParsing="false" onAction="#choice10" prefHeight="21.0" prefWidth="30.0" text="10" />
+      <Button fx:id="btnbefore" layoutX="167.0" layoutY="355.0" mnemonicParsing="false" onAction="#before" text="이전" />
+      <Button fx:id="btnnext" layoutX="247.0" layoutY="355.0" mnemonicParsing="false" onAction="#next" prefHeight="21.0" prefWidth="40.0" text="다음" />
+      <Button fx:id="btnchoice11" layoutX="57.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice11" prefHeight="21.0" prefWidth="30.0" text="11" />
+      <Button fx:id="btnchoice12" layoutX="87.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice12" prefHeight="21.0" prefWidth="30.0" text="12" />
+      <Button fx:id="btnchoice13" layoutX="139.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice13" prefHeight="21.0" prefWidth="30.0" text="13" />
+      <Button fx:id="btnchoice14" layoutX="169.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice14" prefHeight="21.0" prefWidth="30.0" text="14" />
+      <Button fx:id="btnchoice15" layoutX="199.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice15" prefHeight="21.0" prefWidth="30.0" text="15" />
+      <Button fx:id="btnchoice16" layoutX="229.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice16" prefHeight="21.0" prefWidth="30.0" text="16" />
+      <Button fx:id="btnchoice17" layoutX="259.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice17" prefHeight="21.0" prefWidth="30.0" text="17" />
+      <Button fx:id="choice18" layoutX="289.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice18" prefHeight="21.0" prefWidth="30.0" text="18" />
+      <Button fx:id="btnchoice19" layoutX="340.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice19" prefHeight="21.0" prefWidth="30.0" text="19" />
+      <Button fx:id="btnchoice20" layoutX="370.0" layoutY="179.0" mnemonicParsing="false" onAction="#choice20" prefHeight="21.0" prefWidth="30.0" text="20" />
+      <Button fx:id="btnchoice21" layoutX="57.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice21" prefHeight="21.0" prefWidth="30.0" text="21" />
+      <Button fx:id="btnchoice22" layoutX="87.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice22" prefHeight="21.0" prefWidth="30.0" text="22" />
+      <Button fx:id="btnchoice23" layoutX="139.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice23" prefHeight="21.0" prefWidth="30.0" text="23" />
+      <Button fx:id="btnchoice24" layoutX="169.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice24" prefHeight="21.0" prefWidth="30.0" text="24" />
+      <Button fx:id="btnchoice25" layoutX="199.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice25" prefHeight="21.0" prefWidth="30.0" text="25" />
+      <Button fx:id="btnchoice26" layoutX="229.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice26" prefHeight="21.0" prefWidth="30.0" text="26" />
+      <Button fx:id="btnchoice27" layoutX="259.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice27" prefHeight="21.0" prefWidth="30.0" text="27" />
+      <Button fx:id="choice28" layoutX="289.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice28" prefHeight="21.0" prefWidth="30.0" text="28" />
+      <Button fx:id="btnchoice29" layoutX="340.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice29" prefHeight="21.0" prefWidth="30.0" text="29" />
+      <Button fx:id="btnchoice30" layoutX="370.0" layoutY="218.0" mnemonicParsing="false" onAction="#choice30" prefHeight="21.0" prefWidth="30.0" text="30" />
+      <Button fx:id="btnchoice31" layoutX="57.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice31" prefHeight="21.0" prefWidth="30.0" text="31" />
+      <Button fx:id="btnchoice32" layoutX="87.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice32" prefHeight="21.0" prefWidth="30.0" text="32" />
+      <Button fx:id="btnchoice33" layoutX="139.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice33" prefHeight="21.0" prefWidth="30.0" text="33" />
+      <Button fx:id="btnchoice34" layoutX="169.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice34" prefHeight="21.0" prefWidth="30.0" text="34" />
+      <Button fx:id="btnchoice35" layoutX="199.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice35" prefHeight="21.0" prefWidth="30.0" text="35" />
+      <Button fx:id="btnchoice36" layoutX="229.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice36" prefHeight="21.0" prefWidth="30.0" text="36" />
+      <Button fx:id="btnchoice37" layoutX="259.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice37" prefHeight="21.0" prefWidth="30.0" text="37" />
+      <Button fx:id="choice38" layoutX="289.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice38" prefHeight="21.0" prefWidth="30.0" text="38" />
+      <Button fx:id="btnchoice39" layoutX="340.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice39" prefHeight="21.0" prefWidth="30.0" text="39" />
+      <Button fx:id="btnchoice40" layoutX="370.0" layoutY="255.0" mnemonicParsing="false" onAction="#choice40" prefHeight="21.0" prefWidth="30.0" text="40" />
+      <Button fx:id="btnchoice41" layoutX="57.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice41" prefHeight="21.0" prefWidth="30.0" text="41" />
+      <Button fx:id="btnchoice42" layoutX="87.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice42" prefHeight="21.0" prefWidth="30.0" text="42" />
+      <Button fx:id="btnchoice43" layoutX="139.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice43" prefHeight="21.0" prefWidth="30.0" text="43" />
+      <Button fx:id="btnchoice44" layoutX="169.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice44" prefHeight="21.0" prefWidth="30.0" text="44" />
+      <Button fx:id="btnchoice45" layoutX="199.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice45" prefHeight="21.0" prefWidth="30.0" text="45" />
+      <Button fx:id="btnchoice46" layoutX="229.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice46" prefHeight="21.0" prefWidth="30.0" text="46" />
+      <Button fx:id="btnchoice47" layoutX="259.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice47" prefHeight="21.0" prefWidth="30.0" text="47" />
+      <Button fx:id="choice48" layoutX="289.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice48" prefHeight="21.0" prefWidth="30.0" text="48" />
+      <Button fx:id="btnchoice49" layoutX="340.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice49" prefHeight="21.0" prefWidth="30.0" text="49" />
+      <Button fx:id="btnchoice50" layoutX="370.0" layoutY="290.0" mnemonicParsing="false" onAction="#choice50" prefHeight="21.0" prefWidth="30.0" text="50" />
+   </children>
+</AnchorPane>
