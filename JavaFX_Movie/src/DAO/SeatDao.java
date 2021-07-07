@@ -2,14 +2,17 @@ package DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import domain.Seat;
 
 public class SeatDao {
 
 	Connection conn;
-	private static MovieDao movieDao = new MovieDao();
+	private static SeatDao  seatDao= new SeatDao();
 
-	public static MovieDao getMovieDao() {
-		return movieDao;
+	public static SeatDao getseatDao() {
+		return seatDao;
 	}
 
 	public SeatDao() {
@@ -21,6 +24,23 @@ public class SeatDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public int addseat(Seat seat) {
+		try {
+			String SQL = "snum"+"value(snum)";
+			PreparedStatement statement = conn.prepareStatement(SQL);
+			statement.setString(1, seat.getSnum());
+			
+			statement.executeUpdate();
+			return 1;
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		return 0;
 	}
 
 }

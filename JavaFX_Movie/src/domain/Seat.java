@@ -1,21 +1,17 @@
 package domain;
 
 public class Seat {
-	
-	private int sno;
-	private String linex,liney;
-	
-	public Seat() {}
 
-	public Seat(int sno, String linex, String liney) {
-		this.sno = sno;
-		this.linex = linex;
-		this.liney = liney;
+	private int sno;
+	private String snum;
+
+	public Seat() {
+
 	}
 
-	public Seat(String linex, String liney) {
-		this.linex = linex;
-		this.liney = liney;
+	public Seat(int sno, String snum) {
+		this.sno = sno;
+		this.snum = snum;
 	}
 
 	public int getSno() {
@@ -26,26 +22,12 @@ public class Seat {
 		this.sno = sno;
 	}
 
-	public String getLinex() {
-		return linex;
+	public String getSnum() {
+		return snum;
 	}
 
-	public void setLinex(String linex) {
-		this.linex = linex;
+	public void setSnum(String snum) {
+		this.snum = snum;
 	}
-
-	public String getLiney() {
-		return liney;
-	}
-
-	public void setLiney(String liney) {
-		this.liney = liney;
-	}
-	
-	
-	
-	
-	
-	
 
 }
