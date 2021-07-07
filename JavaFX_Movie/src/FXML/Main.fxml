@@ -7,22 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Maincontroller">
    <children>
       <ImageView fx:id="img_1" fitHeight="240.0" fitWidth="160.0" layoutX="34.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Image/블랙위도우.jpg" />
+            <Image url="@Mainimg_1.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="img_2" fitHeight="240.0" fitWidth="160.0" layoutX="220.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Image/크루엘라.jpg" />
+            <Image url="@Mainimg_2.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="img_3" fitHeight="240.0" fitWidth="160.0" layoutX="416.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Image/발신제한.jpg" />
+            <Image url="@Mainimg_3.jpg" />
          </image>
       </ImageView>
       <Label layoutX="169.0" layoutY="14.0" prefHeight="43.0" prefWidth="273.0" text="MEGA CINEMA">
