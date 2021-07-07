@@ -3,19 +3,22 @@ package domain;
 public class Time {
 	
 	private int tno;
-	private String start,end;
+	private String rtime;
+	private int tnum;
 	
 	public Time() {}
 
-	public Time(int tno, String start, String end) {
+	public Time(int tno, String rtime, int tnum) {
+		super();
 		this.tno = tno;
-		this.start = start;
-		this.end = end;
+		this.rtime = rtime;
+		this.tnum = tnum;
 	}
 
-	public Time(String start, String end) {
-		this.start = start;
-		this.end = end;
+	public Time(String rtime, int tnum) {
+		super();
+		this.rtime = rtime;
+		this.tnum = tnum;
 	}
 
 	public int getTno() {
@@ -26,21 +29,25 @@ public class Time {
 		this.tno = tno;
 	}
 
-	public String getStart() {
-		return start;
+	public String getRtime() {
+		return rtime;
 	}
 
-	public void setStart(String start) {
-		this.start = start;
+	public void setRtime(String rtime) {
+		this.rtime = rtime;
 	}
 
-	public String getEnd() {
-		return end;
+	public int getTnum() {
+		return tnum;
 	}
 
-	public void setEnd(String end) {
-		this.end = end;
+	public void setTnum(int tnum) {
+		this.tnum = tnum;
 	}
+	
+	
+
+
 	
 	
 	
