@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="126.0" layoutY="14.0" prefHeight="48.0" prefWidth="321.0" text=" Reserve Information">
+         <font>
+            <Font name="Arial" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgselectimg" fitHeight="248.0" fitWidth="193.0" layoutX="60.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="300.0" layoutY="110.0" text="제목  :   ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="165.0" text="시간  :  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="223.0" text="인원  :  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="281.0" text="좌석  :  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblselecttitle" layoutX="401.0" layoutY="115.0" text="영화제목" />
+      <Label fx:id="lblselecttime" layoutX="401.0" layoutY="170.0" text="영화시간" />
+      <Label fx:id="lblselectps" layoutX="401.0" layoutY="228.0" text="예약인원" />
+      <Label fx:id="lblselectseat" layoutX="401.0" layoutY="286.0" text="예약좌석" />
+      <Button fx:id="btnclose" layoutX="497.0" layoutY="349.0" mnemonicParsing="false" onAction="#close" prefHeight="22.0" prefWidth="63.0" text="종료" />
+   </children>
+</AnchorPane>
