@@ -18,6 +18,7 @@ public class Main extends Application {
 			primaryStage.setTitle("MEGA CINEMA : select movie");
 			
 			primaryStage.show();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
