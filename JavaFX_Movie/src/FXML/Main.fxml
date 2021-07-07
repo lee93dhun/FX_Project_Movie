@@ -7,30 +7,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Maincontroller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Maincontroller">
    <children>
-      <ImageView fx:id="img_1" fitHeight="240.0" fitWidth="160.0" layoutX="34.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="img_1" fitHeight="338.0" fitWidth="236.0" layoutX="21.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Mainimg_1.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="img_2" fitHeight="240.0" fitWidth="160.0" layoutX="220.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="img_2" fitHeight="338.0" fitWidth="236.0" layoutX="279.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Mainimg_2.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="img_3" fitHeight="240.0" fitWidth="160.0" layoutX="416.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="img_3" fitHeight="336.0" fitWidth="236.0" layoutX="537.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Mainimg_3.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="169.0" layoutY="14.0" prefHeight="43.0" prefWidth="273.0" text="MEGA CINEMA">
+      <Label layoutX="279.0" layoutY="14.0" prefHeight="43.0" prefWidth="273.0" text="MEGA CINEMA">
          <font>
             <Font name="Arial" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="btnticketing_1" layoutX="82.0" layoutY="346.0" mnemonicParsing="false" onAction="#ticketing_1" text="예매하기" />
-      <Button fx:id="btnticketing_2" layoutX="268.0" layoutY="346.0" mnemonicParsing="false" onAction="#ticketing_2" text="예매하기" />
-      <Button fx:id="btnticketing_3" layoutX="464.0" layoutY="346.0" mnemonicParsing="false" onAction="#ticketing_3" text="예매하기" />
+      <Button fx:id="btnticketing_1" layoutX="75.0" layoutY="446.0" mnemonicParsing="false" onAction="#ticketing_1" prefHeight="30.0" prefWidth="130.0" text="예매하기">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnticketing_2" layoutX="332.0" layoutY="446.0" mnemonicParsing="false" onAction="#ticketing_2" prefHeight="30.0" prefWidth="130.0" text="예매하기">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnticketing_3" layoutX="589.0" layoutY="446.0" mnemonicParsing="false" onAction="#ticketing_3" prefHeight="30.0" prefWidth="130.0" text="예매하기">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>
