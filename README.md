@@ -9,7 +9,7 @@
 
 5. 담당
 
-DB명 : jvavafx_movie
+DB명 : javafx_movie
 
 1.영화(movie)
 
