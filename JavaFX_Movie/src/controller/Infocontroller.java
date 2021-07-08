@@ -4,6 +4,9 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import DAO.MovieDao;
+import DAO.ReservationDao;
+import domain.Movie;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,7 +22,15 @@ public class Infocontroller implements Initializable{
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
+		
+		MovieDao movieDao = MovieDao.getmovieDao();
+		ReservationDao reservationDao = ReservationDao.getReservationDao();
+		
+		Movie movie = movieDao.
+		
+		
+		
+				
 		
 	}
 	
@@ -50,9 +61,22 @@ public class Infocontroller implements Initializable{
     @FXML
     void close(ActionEvent event) {
     	Alert alert = new Alert(AlertType.INFORMATION);
-    	alert.setContentText("종료");
-    	alert.setHeaderText("종료");
+    	alert.setContentText("결재");
+    	alert.setHeaderText("결재완료");
+    	alert.showAndWait();
+    	
+    	Alert alert2 = new Alert(AlertType.CONFIRMATION);
+    	alert2.setContentText("종료하시겠습니까? [아니요를 누르면 첫화면으로 돌아감]");
+    	alert2.setHeaderText("종료");
+    	
+    	Optional<ButtonType> result = alert2.showAndWait();
+    	if(result.get() == ButtonType.OK) {
+    		
+    	}
+    	else {
     		Platform.exit();
+    	}
+    		
 
 
     }

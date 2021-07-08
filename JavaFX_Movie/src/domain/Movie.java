@@ -10,11 +10,13 @@ public class Movie {
 	private String mrating;
 	private int mprice;
 	private String mimage;
+	private int mcondition;
 	
 	public Movie() {}
 
 	public Movie(int mno, String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
-			String mimage) {
+			String mimage, int mcondition) {
+		super();
 		this.mno = mno;
 		this.mtitle = mtitle;
 		this.mgenre = mgenre;
@@ -23,10 +25,12 @@ public class Movie {
 		this.mrating = mrating;
 		this.mprice = mprice;
 		this.mimage = mimage;
+		this.mcondition = mcondition;
 	}
 
 	public Movie(String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
-			String mimage) {
+			String mimage, int mcondition) {
+		super();
 		this.mtitle = mtitle;
 		this.mgenre = mgenre;
 		this.moutline = moutline;
@@ -34,6 +38,7 @@ public class Movie {
 		this.mrating = mrating;
 		this.mprice = mprice;
 		this.mimage = mimage;
+		this.mcondition = mcondition;
 	}
 
 	public int getMno() {
@@ -99,6 +104,18 @@ public class Movie {
 	public void setMimage(String mimage) {
 		this.mimage = mimage;
 	}
+
+	public int getMcondition() {
+		return mcondition;
+	}
+
+	public void setMcondition(int mcondition) {
+		this.mcondition = mcondition;
+	}
+	
+	
+
+
 	
 	
 	

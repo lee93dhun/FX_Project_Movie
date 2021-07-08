@@ -3,6 +3,7 @@ package DAO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import domain.Movie;
 
@@ -29,8 +30,8 @@ public class MovieDao {
 	public int addMovie(Movie movie) {
 
 		try {
-			String SQL = "insert into movie(mtitle,mgenre,mouline,mrelease,mrating,mprice,mimage)"
-					+ "values(?,?,?,?,?,?,?)";
+			String SQL = "insert into movie(mtitle,mgenre,moutline,mrelease,mrating,mprice,mimage,mcondition)"
+					+ "values(?,?,?,?,?,?,?,?)";
 			PreparedStatement statement = conn.prepareStatement(SQL);
 			statement.setString(1, movie.getMtitle());
 			statement.setString(2, movie.getMgenre());
@@ -39,6 +40,7 @@ public class MovieDao {
 			statement.setString(5, movie.getMrating());
 			statement.setInt(6, movie.getMprice());
 			statement.setString(7, movie.getMimage());
+			statement.setString(8, movie.getMcondition());
 			statement.executeUpdate();
 
 			return 1;
@@ -48,5 +50,39 @@ public class MovieDao {
 		}
 		return 0;
 	}
+	
+	public Movie movie(String mtitle) {
+		
+		Movie movie = new Movie();
+		
+		String SQL = "select *from movie where mtitle=?";
+		try {
+		PreparedStatement statement = conn.prepareStatement(SQL);
+		statement.setString(1, mtitle);
+		
+		ResultSet resultSet = statement.executeQuery();
+		
+		if(resultSet.next()) {
+			movie.setMtitle(resultSet.getString(1));
+			movie.setMgenre(resultSet.getString(2));
+			movie.setMoutline(resultSet.getString(3));
+			movie.setMrelease(resultSet.getString(4));
+			movie.setMrating(resultSet.getString(5));
+			movie.setMprice(resultSet.getInt(6));
+			movie.setMimage(resultSet.getString(7));
+			movie.setMcondition(resultSet.getInt(8));
+			return movie;
+		}
+		
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+	
+	
+	
+	
 
 }
