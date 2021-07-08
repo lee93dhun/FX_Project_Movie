@@ -9,8 +9,10 @@
 
 5. 담당
 
+DB명 : jvavafx_movie
 
 1.영화(movie)
+
 
 create table javafx_movie.movie(
 mno int primary key auto_increment,
