@@ -31,9 +31,10 @@ mcondition int not null
 
 create table javafx_movie.reservation(
 	rno int primary key auto_increment,
+    mno int not null,
+	FOREIGN KEY (mno) REFERENCES movie(mno),
 	mseat varchar(100) not null,
-	rtime int not null,
-	mno int not null,
-	FOREIGN KEY (mno) REFERENCES movie(mno)
+	rtime varchar(45) not null,
+    person int not null	
 )
 
