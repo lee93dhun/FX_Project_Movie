@@ -3,7 +3,7 @@ package domain;
 public class Reservation {
 	private int rno;
 	private String mseat;
-	private int rtime;
+	private String rtime;
 	private int mno;
 	private int person;
 	
@@ -11,7 +11,7 @@ public class Reservation {
 	public Reservation() {}
 
 
-	public Reservation(int rno, String mseat, int rtime, int mno, int person) {
+	public Reservation(int rno, String mseat, String rtime, int mno, int person) {
 		super();
 		this.rno = rno;
 		this.mseat = mseat;
@@ -21,7 +21,7 @@ public class Reservation {
 	}
 
 
-	public Reservation(String mseat, int rtime, int mno, int person) {
+	public Reservation(String mseat, String rtime, int mno, int person) {
 		super();
 		this.mseat = mseat;
 		this.rtime = rtime;
@@ -50,12 +50,12 @@ public class Reservation {
 	}
 
 
-	public int getRtime() {
+	public String getRtime() {
 		return rtime;
 	}
 
 
-	public void setRtime(int rtime) {
+	public void setRtime(String rtime) {
 		this.rtime = rtime;
 	}
 

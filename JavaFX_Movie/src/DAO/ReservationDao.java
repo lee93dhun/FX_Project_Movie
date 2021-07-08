@@ -2,6 +2,10 @@ package DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import domain.Reservation;
 
 public class ReservationDao {
 	
@@ -20,6 +24,27 @@ public class ReservationDao {
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	public Reservation getreservation(int mno) {
+		
+		Reservation reservation = new Reservation();
+		
+		String SQL = "select * from reservation where mno=?";
+		
+		try {
+			PreparedStatement statement = conn.prepareStatement(SQL);
+			statement.setInt(0, mno);
+			
+			ResultSet resultSet = statement.executeQuery();
+			
+			if(resultSet.next()) {
+				reservation.setMseat(resultSet.getString(1));
+				reservation.setRtime(resultSet.getString(2));
+			}
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 	}
 	
 

@@ -51,7 +51,7 @@ public class MovieDao {
 		return 0;
 	}
 	
-	public Movie movie(String mtitle) {
+	public Movie getmovie(String mtitle) {
 		
 		Movie movie = new Movie();
 		
