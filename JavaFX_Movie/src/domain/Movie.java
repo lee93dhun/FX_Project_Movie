@@ -3,79 +3,107 @@ package domain;
 public class Movie {
 	
 	private int mno;
-	private String title;
-	private String genre;
-	private String time;
-	private String image;
-	
+	private String mtitle;
+	private String mgenre;
+	private String moutline;
+	private String mrelease;
+	private String mrating;
+	private int mprice;
+	private String mimage;
 	
 	public Movie() {}
 
-
-	public Movie(int mno, String title, String genre, String time, String image) {
+	public Movie(int mno, String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
+			String mimage) {
 		this.mno = mno;
-		this.title = title;
-		this.genre = genre;
-		this.time = time;
-		this.image = image;
+		this.mtitle = mtitle;
+		this.mgenre = mgenre;
+		this.moutline = moutline;
+		this.mrelease = mrelease;
+		this.mrating = mrating;
+		this.mprice = mprice;
+		this.mimage = mimage;
 	}
 
-	public Movie(String title, String genre, String time, String image) {
-		this.title = title;
-		this.genre = genre;
-		this.time = time;
-		this.image = image;
+	public Movie(String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
+			String mimage) {
+		this.mtitle = mtitle;
+		this.mgenre = mgenre;
+		this.moutline = moutline;
+		this.mrelease = mrelease;
+		this.mrating = mrating;
+		this.mprice = mprice;
+		this.mimage = mimage;
 	}
-
 
 	public int getMno() {
 		return mno;
 	}
 
-
 	public void setMno(int mno) {
 		this.mno = mno;
 	}
 
-
-	public String getTitle() {
-		return title;
+	public String getMtitle() {
+		return mtitle;
 	}
 
-
-	public void setTitle(String title) {
-		this.title = title;
+	public void setMtitle(String mtitle) {
+		this.mtitle = mtitle;
 	}
 
-
-	public String getGenre() {
-		return genre;
+	public String getMgenre() {
+		return mgenre;
 	}
 
-
-	public void setGenre(String genre) {
-		this.genre = genre;
+	public void setMgenre(String mgenre) {
+		this.mgenre = mgenre;
 	}
 
-
-	public String getTime() {
-		return time;
+	public String getMoutline() {
+		return moutline;
 	}
 
-
-	public void setTime(String time) {
-		this.time = time;
+	public void setMoutline(String moutline) {
+		this.moutline = moutline;
 	}
 
-
-	public String getImage() {
-		return image;
+	public String getMrelease() {
+		return mrelease;
 	}
 
-
-	public void setImage(String image) {
-		this.image = image;
+	public void setMrelease(String mrelease) {
+		this.mrelease = mrelease;
 	}
+
+	public String getMrating() {
+		return mrating;
+	}
+
+	public void setMrating(String mrating) {
+		this.mrating = mrating;
+	}
+
+	public int getMprice() {
+		return mprice;
+	}
+
+	public void setMprice(int mprice) {
+		this.mprice = mprice;
+	}
+
+	public String getMimage() {
+		return mimage;
+	}
+
+	public void setMimage(String mimage) {
+		this.mimage = mimage;
+	}
+	
+	
+	
+	
+	
 	
 	
 	

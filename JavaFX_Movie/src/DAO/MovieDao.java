@@ -29,12 +29,16 @@ public class MovieDao {
 	public int addMovie(Movie movie) {
 
 		try {
-			String SQL = "insert into movie(title,genre,time,image)" + "values(?,?,?,?)";
+			String SQL = "insert into movie(mtitle,mgenre,mouline,mrelease,mrating,mprice,mimage)"
+					+ "values(?,?,?,?,?,?,?)";
 			PreparedStatement statement = conn.prepareStatement(SQL);
-			statement.setString(1, movie.getTitle());
-			statement.setString(2, movie.getGenre());
-			statement.setString(3, movie.getTime());
-			statement.setString(4, movie.getImage());
+			statement.setString(1, movie.getMtitle());
+			statement.setString(2, movie.getMgenre());
+			statement.setString(3, movie.getMoutline());
+			statement.setString(4, movie.getMrelease());
+			statement.setString(5, movie.getMrating());
+			statement.setInt(6, movie.getMprice());
+			statement.setString(7, movie.getMimage());
 			statement.executeUpdate();
 
 			return 1;
