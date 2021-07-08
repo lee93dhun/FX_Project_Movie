@@ -33,17 +33,21 @@ public class ReservationDao {
 		
 		try {
 			PreparedStatement statement = conn.prepareStatement(SQL);
-			statement.setInt(0, mno);
+			statement.setInt(1, mno);
 			
 			ResultSet resultSet = statement.executeQuery();
 			
 			if(resultSet.next()) {
-				reservation.setMseat(resultSet.getString(1));
-				reservation.setRtime(resultSet.getString(2));
+				reservation.setMseat(resultSet.getString(2));
+				reservation.setRtime(resultSet.getString(3));
+				reservation.setPerson(resultSet.getInt(4));
+				
+				return reservation;
 			}
 		}catch (Exception e) {
 			// TODO: handle exception
 		}
+		return null;
 		
 	}
 	

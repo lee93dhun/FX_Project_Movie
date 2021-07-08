@@ -5,11 +5,32 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
 
 public class Maincontroller implements Initializable {
+	
+	private static Maincontroller instance;
+	
+	public Maincontroller() {
+		instance = this;
+	}
+	public static Maincontroller getinstance() {
+		return instance;
+	}
+	
+	public void loadpage(String page) {
+		try {
+			Parent parent = FXMLLoader.load(getClass().getResource(page));
+			
+		}catch (Exception e) {
+			
+		}
+	}
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -19,6 +40,8 @@ public class Maincontroller implements Initializable {
 		
 	}
 	
+  
+   
 	@FXML
     private ImageView img_1;
 
@@ -39,7 +62,7 @@ public class Maincontroller implements Initializable {
 
     @FXML
     void ticketing_1(ActionEvent event) {
-
+    	loadpage("seat");
     }
 
     @FXML

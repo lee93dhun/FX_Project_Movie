@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="controller.infocontroller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="241.0" layoutY="14.0" prefHeight="48.0" prefWidth="321.0" text=" Reserve Information">
          <font>
@@ -47,7 +47,7 @@
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Label fx:id="lblselectps" layoutX="573.0" layoutY="215.0" text="예약인원">
+      <Label fx:id="lblselectps" layoutX="573.0" layoutY="207.0" text="예약인원">
          <font>
             <Font size="16.0" />
          </font></Label>

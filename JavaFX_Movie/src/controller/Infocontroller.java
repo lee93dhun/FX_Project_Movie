@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import DAO.MovieDao;
 import DAO.ReservationDao;
 import domain.Movie;
+import domain.Reservation;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,68 +19,70 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.ImageView;
 
-public class Infocontroller implements Initializable{
-	
+public class Infocontroller implements Initializable {
+	private String mtitle;
+	private  int mno;
+
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		
+
 		MovieDao movieDao = MovieDao.getmovieDao();
 		ReservationDao reservationDao = ReservationDao.getReservationDao();
-		
-		Movie movie = movieDao.
-		
-		
-		
-				
-		
+
+		Movie movie = movieDao.getmovie(mtitle);
+		Reservation reservation = reservationDao.getreservation(mno);
+
+		lblselecttitle.setText(movie.getMtitle());
+		lblselectgenre.setText(movie.getMgenre());
+		lblselecttime.setText(reservation.getRtime());
+		lblselectps.setText(String.valueOf(reservation.getPerson()));
+		lblselectseat.setText(reservation.getMseat());
+		lblprice.setText(String.valueOf(movie.getMprice()));
+
 	}
-	
-    @FXML
-    private ImageView imgselectimg;
 
-    @FXML
-    private Label lblselecttitle;
+	@FXML
+	private ImageView imgselectimg;
 
-    @FXML
-    private Label lblselectgenre;
+	@FXML
+	private Label lblselecttitle;
 
-    @FXML
-    private Label lblselecttime;
+	@FXML
+	private Label lblselectgenre;
 
-    @FXML
-    private Label lblselectps;
+	@FXML
+	private Label lblselecttime;
 
-    @FXML
-    private Label lblselectseat;
+	@FXML
+	private Label lblselectps;
 
-    @FXML
-    private Button btnclose;
+	@FXML
+	private Label lblselectseat;
 
-    @FXML
-    private Label lblprice;
+	@FXML
+	private Button btnclose;
 
-    @FXML
-    void close(ActionEvent event) {
-    	Alert alert = new Alert(AlertType.INFORMATION);
-    	alert.setContentText("결재");
-    	alert.setHeaderText("결재완료");
-    	alert.showAndWait();
-    	
-    	Alert alert2 = new Alert(AlertType.CONFIRMATION);
-    	alert2.setContentText("종료하시겠습니까? [아니요를 누르면 첫화면으로 돌아감]");
-    	alert2.setHeaderText("종료");
-    	
-    	Optional<ButtonType> result = alert2.showAndWait();
-    	if(result.get() == ButtonType.OK) {
-    		
-    	}
-    	else {
-    		Platform.exit();
-    	}
-    		
+	@FXML
+	private Label lblprice;
 
+	@FXML
+	void close(ActionEvent event) {
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setContentText("결재");
+		alert.setHeaderText("결재완료");
+		alert.showAndWait();
 
-    }
+		Alert alert2 = new Alert(AlertType.CONFIRMATION);
+		alert2.setContentText("종료하시겠습니까? [아니요를 누르면 첫화면으로 돌아감]");
+		alert2.setHeaderText("종료");
 
+		Optional<ButtonType> result = alert2.showAndWait();
+		if (result.get() == ButtonType.OK) {
+
+		} else {
+			Platform.exit();
+		}
+
+	}
 
 }
