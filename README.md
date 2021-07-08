@@ -9,3 +9,29 @@
 
 5. 담당
 
+
+1.영화(movie)
+
+create table javafx_movie.movie(
+mno int primary key auto_increment,
+mtitle varchar(20) not null,
+mgenre varchar(20) not null,
+moutline varchar(20) not null,
+mrelease varchar(20) not null,
+mrating varchar(20) not null,
+mprice int not null,
+mimage varchar(100) not null
+
+);
+
+
+2.예매(reservation)
+
+create table javafx_movie.reservation(
+	rno int primary key auto_increment,
+	mseat varchar(100) not null,
+	rtime int not null,
+	mno int not null,
+	FOREIGN KEY (mno) REFERENCES movie(mno)
+)
+
