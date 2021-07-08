@@ -40,7 +40,7 @@ public class MovieDao {
 			statement.setString(5, movie.getMrating());
 			statement.setInt(6, movie.getMprice());
 			statement.setString(7, movie.getMimage());
-			statement.setString(8, movie.getMcondition());
+			statement.setInt(8, movie.getMcondition());
 			statement.executeUpdate();
 
 			return 1;
