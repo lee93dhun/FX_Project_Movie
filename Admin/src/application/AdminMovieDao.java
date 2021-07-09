@@ -3,6 +3,10 @@ package application;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 
 public class AdminMovieDao {
@@ -21,7 +25,6 @@ public class AdminMovieDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_movie?serverTime=UTC", "root", "1234");
-			System.out.println("연동");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -31,19 +34,16 @@ public class AdminMovieDao {
 
 		try {
 			String SQL = "insert into movie(mtitle,mgenre,moutline,mrelease,mrating,mprice,mimage,mcondition)"+ "values(?,?,?,?,?,?,?,?)";
-			System.out.println("연동");
 			PreparedStatement statement = conn.prepareStatement(SQL);
-			System.out.println("연동");
-			statement.setString(1, movie.getMtitle()); 		System.out.println( movie.getMtitle() );
-			statement.setString(2, movie.getMgenre());		System.out.println( movie.getMgenre() );
-			statement.setString(3, movie.getMoutline());	System.out.println( movie.getMoutline() );
-			statement.setString(4, movie.getMrelease());	System.out.println( movie.getMrelease() );
-			statement.setString(5, movie.getMrating());		System.out.println( movie.getMrating() );
-			statement.setInt(6, movie.getMprice());			System.out.println( movie.getMprice() );
-			statement.setString(7, movie.getMimage());		System.out.println( movie.getMimage() );
+			statement.setString(1, movie.getMtitle()); 		
+			statement.setString(2, movie.getMgenre());		
+			statement.setString(3, movie.getMoutline());	
+			statement.setString(4, movie.getMrelease());	
+			statement.setString(5, movie.getMrating());		
+			statement.setInt(6, movie.getMprice());			
+			statement.setString(7, movie.getMimage());		
 			statement.setInt(8, 0 );	
 			statement.executeUpdate();
-			System.out.println("연동");
 			return 1;
 
 		} catch (Exception e) {
@@ -52,5 +52,58 @@ public class AdminMovieDao {
 		}
 		return 0;
 	}
+	
+	
+	// 모든 게시물 출력메소드
+	public ObservableList<AdminMovie> mfield() {
+		ObservableList<AdminMovie> adminMovies = FXCollections.observableArrayList();
+		// 1.SQL 작성 
+				String SQL ="select * from movie";
+				// 2.SQL 조작 
+				try {
+					PreparedStatement statement = conn.prepareStatement(SQL);
+				// 3.SQL 실행
+				// 4.SQL 결과
+					ResultSet resultSet =  statement.executeQuery(); // select 검색 => Query 결과
+					// 5. 검색된 모든 게시물을 객체 => 리스트에 담기 
+					while( resultSet.next() ) {
+								// 검색결과의 다음 레코드가 존재하면 
+						AdminMovie adminMovie = new AdminMovie();
+						
+							adminMovie.setMno( resultSet.getInt(1) );
+							adminMovie.setMtitle( resultSet.getString(2));
+							adminMovie.setMgenre( resultSet.getString(3));
+							adminMovie.setMoutline( resultSet.getString(4));
+							adminMovie.setMrating( resultSet.getString(6));
+							adminMovie.setMprice( resultSet.getInt(7));
+							
+							adminMovies.add(adminMovie); // 리스트 담기 
+					}
+					
+					return adminMovies; // 리스트 반환 
+				}
+				
+				catch (Exception e) {
+					// TODO: handle exception
+				}
+				
+				return null; // db 오류시 null 반환 
+			}
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

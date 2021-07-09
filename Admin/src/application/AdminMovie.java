@@ -10,6 +10,7 @@ public class AdminMovie {
 	private String mrating;
 	private int mprice;
 	private String mimage;
+	private int mcondition;
 	
 	public AdminMovie() {}
 
@@ -24,6 +25,16 @@ public class AdminMovie {
 		this.mprice = mprice;
 		this.mimage = mimage;
 	}
+	
+	public AdminMovie(int mno, String mtitle, String mgenre, String moutline, String mrating, int mprice) {
+		this.mno = mno;
+		this.mtitle = mtitle;
+		this.mgenre = mgenre;
+		this.moutline = moutline;
+		this.mrating = mrating;
+		this.mprice = mprice;
+	}
+	
 
 	public AdminMovie(String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
 			String mimage) {
@@ -98,6 +109,14 @@ public class AdminMovie {
 
 	public void setMimage(String mimage) {
 		this.mimage = mimage;
+	}
+	
+	public int getMcondition() {
+		return mcondition;
+	}
+
+	public void setMcondition(int mcodition) {
+		this.mcondition = mcodition;
 	}
 
 }
