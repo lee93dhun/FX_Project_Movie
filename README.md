@@ -38,13 +38,30 @@ create table javafx_movie.reservation(
     person int not null	
 )
 ```
-
+------------------------------
 # 4. SceneBuilder FXML
 
 
 
 # 5. 담당
 
+## 이도훈
+```
+ 관리자 프로그램
+ FXML
+ 
+```
+
+## 문주연
+```
+DB
 
 
+```
+
+## 박주성
+```
+클래스 설계
+
+```
 
