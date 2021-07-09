@@ -6,7 +6,7 @@
 
 # 3. 사용되는 클래스
 
-##DB명 : javafx_movie
+## DB명 : javafx_movie
 
 ### 1.영화(movie)
 
