@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminLogController">
+   <children>
+      <ImageView fitHeight="253.0" fitWidth="471.0" layoutX="266.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@popcorn.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="157.0" layoutY="14.0" prefHeight="60.0" prefWidth="503.0" text="POPCORN CINEMA">
+         <font>
+            <Font name="Arial" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="582.0" layoutY="44.0" text="( ADMIN )">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="367.0" text="ID">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="400.0" text="PW">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" layoutX="305.0" layoutY="369.0" prefHeight="25.0" prefWidth="193.0" promptText="Admin ID" style="-fx-border-color: DC143C;" />
+      <PasswordField fx:id="txtpw" layoutX="305.0" layoutY="402.0" prefHeight="25.0" prefWidth="193.0" promptText="Admin PW" style="-fx-border-color: DC143C;" />
+      <Button fx:id="btnlogin" layoutX="328.0" layoutY="451.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="LOGIN">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
