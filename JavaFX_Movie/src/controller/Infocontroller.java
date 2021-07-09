@@ -41,47 +41,47 @@ public class Infocontroller implements Initializable {
 
 	}
 
-	@FXML
-	private ImageView imgselectimg;
+    @FXML
+    private ImageView imgselectimg;
 
-	@FXML
-	private Label lblselecttitle;
+    @FXML
+    private Label lblselecttitle;
 
-	@FXML
-	private Label lblselectgenre;
+    @FXML
+    private Label lblselectgenre;
 
-	@FXML
-	private Label lblselecttime;
+    @FXML
+    private Label lblselecttime;
 
-	@FXML
-	private Label lblselectps;
+    @FXML
+    private Label lblselectps;
 
-	@FXML
-	private Label lblselectseat;
+    @FXML
+    private Label lblselectseat;
 
-	@FXML
-	private Button btnclose;
+    @FXML
+    private Button btnclose;
 
-	@FXML
-	private Label lblprice;
+    @FXML
+    private Label lblprice;
 
 	@FXML
 	void close(ActionEvent event) {
-		Alert alert = new Alert(AlertType.INFORMATION);
-		alert.setContentText("결재");
-		alert.setHeaderText("결재완료");
-		alert.showAndWait();
-
-		Alert alert2 = new Alert(AlertType.CONFIRMATION);
-		alert2.setContentText("종료하시겠습니까? [아니요를 누르면 첫화면으로 돌아감]");
-		alert2.setHeaderText("종료");
-
-		Optional<ButtonType> result = alert2.showAndWait();
-		if (result.get() == ButtonType.OK) {
-
-		} else {
-			Platform.exit();
-		}
+//		Alert alert = new Alert(AlertType.INFORMATION);
+//		alert.setContentText("결재");
+//		alert.setHeaderText("결재완료");
+//		alert.showAndWait();
+//
+//		Alert alert2 = new Alert(AlertType.CONFIRMATION);
+//		alert2.setContentText("종료하시겠습니까? [아니요를 누르면 첫화면으로 돌아감]");
+//		alert2.setHeaderText("종료");
+//
+//		Optional<ButtonType> result = alert2.showAndWait();
+//		if (result.get() == ButtonType.OK) {
+//
+//		} else {
+//			Platform.exit();
+//		}
 
 	}
 

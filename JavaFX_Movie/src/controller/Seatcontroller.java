@@ -5,8 +5,12 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class Seatcontroller implements Initializable  {
 	
@@ -429,6 +433,18 @@ public class Seatcontroller implements Initializable  {
 
     @FXML
     void next(ActionEvent event) {
+     	try {
+			Stage stage = new Stage();
+			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/ReserveInfo.fxml"));
+			Scene scene = new Scene(parent);
+			stage.setResizable(false);
+			stage.setTitle("POPCORN CINEMA : movie infomation");
+			stage.setScene(scene);
+			stage.show();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
     }
 	

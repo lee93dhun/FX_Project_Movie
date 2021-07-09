@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Timecontroller">
    <children>
       <ImageView fx:id="img" fitHeight="348.0" fitWidth="274.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Mainimg_1.jpg" />
          </image></ImageView>
-      <MenuButton fx:id="btntimebox" layoutX="335.0" layoutY="213.0" mnemonicParsing="false" onAction="#timebox" prefHeight="26.0" prefWidth="76.0" text="시간">
+      <MenuButton fx:id="btntimebox" alignment="CENTER" layoutX="335.0" layoutY="213.0" mnemonicParsing="false" onAction="#timebox" prefHeight="26.0" prefWidth="76.0" text="시간">
          <items>
             <MenuItem mnemonicParsing="false" text="09 : 00" />
             <MenuItem mnemonicParsing="false" text="15 : 00" />
@@ -23,7 +23,7 @@
          </items>
       </MenuButton>
       <Button fx:id="btnbefore" layoutX="329.0" layoutY="344.0" mnemonicParsing="false" onAction="#before" prefHeight="26.0" prefWidth="88.0" text="이전" />
-      <MenuButton fx:id="btnperson" layoutX="448.0" layoutY="213.0" mnemonicParsing="false" onAction="#person" prefHeight="26.0" prefWidth="76.0" text="인원">
+      <MenuButton fx:id="btnperson" alignment="CENTER" layoutX="448.0" layoutY="213.0" mnemonicParsing="false" onAction="#person" prefHeight="26.0" prefWidth="76.0" text="인원">
         <items>
           <MenuItem mnemonicParsing="false" text="1명" />
           <MenuItem mnemonicParsing="false" text="2명" />

@@ -6,67 +6,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="controller.infocontroller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="687.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Infocontroller">
    <children>
-      <Label layoutX="241.0" layoutY="14.0" prefHeight="48.0" prefWidth="321.0" text=" Reserve Information">
+      <Label layoutX="183.0" layoutY="14.0" prefHeight="48.0" prefWidth="321.0" text=" Reserve Information">
          <font>
             <Font name="Arial" size="33.0" />
          </font>
       </Label>
-      <ImageView fx:id="imgselectimg" fitHeight="248.0" fitWidth="193.0" layoutX="60.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="378.0" layoutY="110.0" text="제목  :   ">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="380.0" layoutY="176.0" text="시간  :  ">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="380.0" layoutY="209.0" text="인원  :  ">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="381.0" layoutY="241.0" text="좌석  :  ">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblselecttitle" layoutX="573.0" layoutY="108.0" text="영화제목">
+      <ImageView fx:id="imgselectimg" fitHeight="437.0" fitWidth="396.0" layoutX="20.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblselecttitle" alignment="CENTER" layoutX="440.0" layoutY="76.0" prefHeight="48.0" prefWidth="205.0" text="영화제목">
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Label fx:id="lblselectgenre" layoutX="573.0" layoutY="134.0" text="영화장르">
+      <Label fx:id="lblselectgenre" alignment="CENTER" layoutX="506.0" layoutY="169.0" prefHeight="30.0" prefWidth="74.0" text="영화장르">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lblselecttime" layoutX="573.0" layoutY="174.0" text="영화시간">
+      <Label fx:id="lblselecttime" alignment="CENTER" layoutX="506.0" layoutY="304.0" prefHeight="30.0" prefWidth="74.0" text="영화시간">
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Label fx:id="lblselectps" layoutX="573.0" layoutY="207.0" text="예약인원">
+      <Label fx:id="lblselectps" alignment="CENTER" layoutX="506.0" layoutY="360.0" prefHeight="30.0" prefWidth="74.0" text="예약인원">
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Label fx:id="lblselectseat" layoutX="573.0" layoutY="248.0" text="예약좌석">
+      <Label fx:id="lblselectseat" alignment="CENTER" layoutX="506.0" layoutY="240.0" prefHeight="30.0" prefWidth="74.0" text="예약좌석">
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Button fx:id="btnclose" layoutX="615.0" layoutY="438.0" mnemonicParsing="false" onAction="#close" prefHeight="22.0" prefWidth="63.0" text="종료" />
-      <Label layoutX="379.0" layoutY="146.0" text="장르  :   " AnchorPane.leftAnchor="379.0">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="380.0" layoutY="274.0" prefHeight="22.0" prefWidth="43.0" text="가격  :  ">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblprice" layoutX="573.0" layoutY="285.0" text="영화가격">
+      <Button fx:id="btnclose" layoutX="580.0" layoutY="553.0" mnemonicParsing="false" onAction="#close" prefHeight="22.0" prefWidth="63.0" text="종료" />
+      <Label fx:id="lblprice" alignment="CENTER" layoutX="506.0" layoutY="421.0" prefHeight="30.0" prefWidth="74.0" text="영화가격">
          <font>
             <Font size="16.0" />
          </font>
