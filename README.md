@@ -6,9 +6,9 @@
 
 # 3. 사용되는 클래스
 
-DB명 : javafx_movie
+##DB명 : javafx_movie
 
-## 1.영화(movie)
+### 1.영화(movie)
 
 ```mysql
 create table javafx_movie.movie(
@@ -25,7 +25,7 @@ mcondition int not null
 ```
 
 
-## 2.예매(reservation)
+### 2.예매(reservation)
 
 ```mysql
 create table javafx_movie.reservation(
