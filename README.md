@@ -8,7 +8,7 @@
 
 ## DB명 : javafx_movie
 
-Table :
+### Table
 ### 1.영화(movie)
 
 ```mysql
