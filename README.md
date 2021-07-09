@@ -1,17 +1,24 @@
 # FX_Project_Movie
-1. 주제 : 영화예매프로그램
 
-2. 개발툴 : JDK11 , JavaFX , SceneBuilder , MYSQL
+#1. 주제 : 영화예매프로그램
 
-3. 사용되는 클래스
+#2. 개발툴 : JDK11 , JavaFX , SceneBuilder , MYSQL
 
-4. SceneBuilder FXML
+#3. 사용되는 클래스
 
-5. 담당
+
+
+#4. SceneBuilder FXML
+
+
+
+#5. 담당
+
+
 
 DB명 : javafx_movie
 
-1.영화(movie)
+##1.영화(movie)
 
 
 create table javafx_movie.movie(
@@ -27,7 +34,7 @@ mcondition int not null
 );
 
 
-2.예매(reservation)
+##2.예매(reservation)
 
 create table javafx_movie.reservation(
 	rno int primary key auto_increment,
