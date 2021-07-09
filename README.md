@@ -6,16 +6,6 @@
 
 # 3. 사용되는 클래스
 
-
-
-# 4. SceneBuilder FXML
-
-
-
-# 5. 담당
-
-
-
 DB명 : javafx_movie
 
 ## 1.영화(movie)
@@ -47,3 +37,13 @@ create table javafx_movie.reservation(
     person int not null	
 )
 ```
+
+# 4. SceneBuilder FXML
+
+
+
+# 5. 담당
+
+
+
+
