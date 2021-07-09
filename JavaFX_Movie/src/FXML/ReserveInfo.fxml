@@ -6,15 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="687.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Infocontroller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="632.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Infocontroller">
    <children>
-      <Label layoutX="183.0" layoutY="14.0" prefHeight="48.0" prefWidth="321.0" text=" Reserve Information">
+      <Label alignment="CENTER" layoutX="183.0" layoutY="14.0" prefHeight="48.0" prefWidth="321.0" text="영화 예매 정보">
          <font>
             <Font name="Arial" size="33.0" />
          </font>
       </Label>
-      <ImageView fx:id="imgselectimg" fitHeight="437.0" fitWidth="396.0" layoutX="20.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="lblselecttitle" alignment="CENTER" layoutX="440.0" layoutY="76.0" prefHeight="48.0" prefWidth="205.0" text="영화제목">
+      <ImageView fx:id="imgselectimg" fitHeight="309.0" fitWidth="396.0" layoutX="20.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblselecttitle" alignment="CENTER" layoutX="438.0" layoutY="76.0" prefHeight="48.0" prefWidth="207.0" text="영화제목">
          <font>
             <Font size="16.0" />
          </font></Label>
@@ -35,8 +35,13 @@
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Button fx:id="btnclose" layoutX="580.0" layoutY="553.0" mnemonicParsing="false" onAction="#close" prefHeight="22.0" prefWidth="63.0" text="종료" />
+      <Button fx:id="btnclose" layoutX="542.0" layoutY="559.0" mnemonicParsing="false" onAction="#close" prefHeight="22.0" prefWidth="63.0" text="종료" />
       <Label fx:id="lblprice" alignment="CENTER" layoutX="506.0" layoutY="421.0" prefHeight="30.0" prefWidth="74.0" text="영화가격">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbloutline" alignment="CENTER" layoutX="73.0" layoutY="427.0" prefHeight="48.0" prefWidth="254.0" text="영화 개요">
          <font>
             <Font size="16.0" />
          </font>
