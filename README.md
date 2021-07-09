@@ -55,7 +55,7 @@ create table javafx_movie.reservation(
 ## 문주연
 ```
 DB
-
+클래스 설계
 
 ```
 
