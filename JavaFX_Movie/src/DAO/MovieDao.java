@@ -21,7 +21,7 @@ public class MovieDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/javafx?serverTime=UTC", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/javafx_movie?serverTime=UTC", "root", "1234");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
