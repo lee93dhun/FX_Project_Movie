@@ -3,6 +3,7 @@ package controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -49,8 +50,9 @@ public class Maincontroller implements Initializable {
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : 시간선택");
+			stage.setTitle("POPCORN CINEMA : selet time");
 			stage.show();
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
@@ -66,6 +68,7 @@ public class Maincontroller implements Initializable {
 			stage.setResizable(false);
 			stage.setTitle("POPCORN CINEMA : selet time");
 			stage.show();
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
@@ -80,8 +83,9 @@ public class Maincontroller implements Initializable {
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : 시간선택");
+			stage.setTitle("POPCORN CINEMA : selet time");
 			stage.show();
+		
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

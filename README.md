@@ -20,7 +20,7 @@ moutline varchar(20) not null,
 mrelease varchar(20) not null,
 mrating varchar(20) not null,
 mprice int not null,
-mimage varchar(100) not null,
+mimage varchar(1000) not null,
 mcondition int not null
 );
 ```
@@ -55,7 +55,7 @@ create table javafx_movie.reservation(
 ## 문주연
 ```
 DB
-
+클래스 설계
 
 ```
 

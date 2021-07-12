@@ -11,17 +11,21 @@ import domain.Reservation;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 public class Infocontroller implements Initializable {
 	private String mtitle;
-	private  int mno;
+	private int mno;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -41,47 +45,59 @@ public class Infocontroller implements Initializable {
 
 	}
 
-    @FXML
-    private ImageView imgselectimg;
+	@FXML
+	private ImageView imgselectimg;
 
-    @FXML
-    private Label lblselecttitle;
+	@FXML
+	private Label lblselecttitle;
 
-    @FXML
-    private Label lblselectgenre;
+	@FXML
+	private Label lblselectgenre;
 
-    @FXML
-    private Label lblselecttime;
+	@FXML
+	private Label lblselecttime;
 
-    @FXML
-    private Label lblselectps;
+	@FXML
+	private Label lblselectps;
 
-    @FXML
-    private Label lblselectseat;
+	@FXML
+	private Label lblselectseat;
 
-    @FXML
-    private Button btnclose;
+	@FXML
+	private Button btnclose;
 
-    @FXML
-    private Label lblprice;
+	@FXML
+	private Label lblprice;
+
+	@FXML
+	private Label lbloutline;
 
 	@FXML
 	void close(ActionEvent event) {
-//		Alert alert = new Alert(AlertType.INFORMATION);
-//		alert.setContentText("°áÀç");
-//		alert.setHeaderText("°áÀç¿Ï·á");
-//		alert.showAndWait();
-//
-//		Alert alert2 = new Alert(AlertType.CONFIRMATION);
-//		alert2.setContentText("Á¾·áÇÏ½Ã°Ú½À´Ï±î? [¾Æ´Ï¿ä¸¦ ´©¸£¸é Ã¹È­¸éÀ¸·Î µ¹¾Æ°¨]");
-//		alert2.setHeaderText("Á¾·á");
-//
-//		Optional<ButtonType> result = alert2.showAndWait();
-//		if (result.get() == ButtonType.OK) {
-//
-//		} else {
-//			Platform.exit();
-//		}
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setContentText("ì˜ˆë§¤ ì™„ë£Œ");
+		alert.setHeaderText("ì˜ˆë§¤ ì™„ë£Œ");
+		alert.showAndWait();
+
+		Alert alert2 = new Alert(AlertType.CONFIRMATION);
+		alert2.setContentText("ì¢…ë£Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ ? [ì•„ë‹ˆì˜¤ë¥¼ ëˆ„ë¥´ë©´ ì²«í™”ë©´ìœ¼ë¡œ ì´ë™]");
+		alert2.setHeaderText("ì¢…ë£Œ");
+
+		Optional<ButtonType> result = alert2.showAndWait();
+		if (result.get() == ButtonType.OK) {
+			Platform.exit();
+		} else {
+			try {
+			Stage stage = new Stage();
+			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Main.fxml"));
+			Scene scene = new Scene(parent);
+			stage.show();
+			
+		
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
 
 	}
 

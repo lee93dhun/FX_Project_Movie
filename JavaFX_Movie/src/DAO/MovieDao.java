@@ -33,6 +33,7 @@ public class MovieDao {
 			String SQL = "insert into movie(mtitle,mgenre,moutline,mrelease,mrating,mprice,mimage,mcondition)"
 					+ "values(?,?,?,?,?,?,?,?)";
 			PreparedStatement statement = conn.prepareStatement(SQL);
+			
 			statement.setString(1, movie.getMtitle());
 			statement.setString(2, movie.getMgenre());
 			statement.setString(3, movie.getMoutline());
@@ -41,8 +42,8 @@ public class MovieDao {
 			statement.setInt(6, movie.getMprice());
 			statement.setString(7, movie.getMimage());
 			statement.setInt(8, movie.getMcondition());
+			
 			statement.executeUpdate();
-
 			return 1;
 
 		} catch (Exception e) {

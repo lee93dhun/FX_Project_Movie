@@ -9,48 +9,66 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Timecontroller">
-   <children>
-      <ImageView fx:id="img" fitHeight="348.0" fitWidth="274.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Mainimg_1.jpg" />
-         </image></ImageView>
-      <MenuButton fx:id="btntimebox" alignment="CENTER" layoutX="335.0" layoutY="213.0" mnemonicParsing="false" onAction="#timebox" prefHeight="26.0" prefWidth="76.0" text="시간">
-         <items>
-            <MenuItem mnemonicParsing="false" text="09 : 00" />
-            <MenuItem mnemonicParsing="false" text="15 : 00" />
-            <MenuItem mnemonicParsing="false" text="21 : 00" />
-         </items>
-      </MenuButton>
-      <Button fx:id="btnbefore" layoutX="329.0" layoutY="344.0" mnemonicParsing="false" onAction="#before" prefHeight="26.0" prefWidth="88.0" text="이전" />
-      <MenuButton fx:id="btnperson" alignment="CENTER" layoutX="448.0" layoutY="213.0" mnemonicParsing="false" onAction="#person" prefHeight="26.0" prefWidth="76.0" text="인원">
-        <items>
-          <MenuItem mnemonicParsing="false" text="1명" />
-          <MenuItem mnemonicParsing="false" text="2명" />
-            <MenuItem mnemonicParsing="false" text="3명" />
-            <MenuItem mnemonicParsing="false" text="4명" />
-        </items>
-      </MenuButton>
-      <Button fx:id="btnnext" layoutX="454.0" layoutY="344.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="88.0" text="다음" />
-      <Label layoutX="302.0" layoutY="49.0" prefHeight="36.0" prefWidth="267.0" text="블랙위도우 (BlackWidow)">
-         <font>
-            <Font name="Arial" size="23.0" />
-         </font>
-      </Label>
-      <Label layoutX="316.0" layoutY="100.0" text="12세 이상 관람가">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="314.0" layoutY="136.0" prefHeight="14.0" prefWidth="224.0" text="개요   :         액션   /   미국   /   134분">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="315.0" layoutY="160.0" prefHeight="14.0" prefWidth="224.0" text="개봉  :          2021 . 07 . 07">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.Timecontroller">
+	<children>
+		<ImageView fx:id="img" fitHeight="348.0" fitWidth="274.0"
+			layoutX="31.0" layoutY="27.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@Mainimg_1.jpg" />
+			</image>
+		</ImageView>
+		<MenuButton fx:id="btntimebox" alignment="CENTER"
+			layoutX="335.0" layoutY="213.0" mnemonicParsing="false"
+			onAction="#timebox" prefHeight="26.0" prefWidth="76.0" text="시간">
+			<items>
+				<MenuItem mnemonicParsing="false" text="09 : 00" />
+				<MenuItem mnemonicParsing="false" text="15 : 00" />
+				<MenuItem mnemonicParsing="false" text="21 : 00" />
+			</items>
+		</MenuButton>
+		<Button fx:id="btnbefore" layoutX="329.0" layoutY="344.0"
+			mnemonicParsing="false" onAction="#before" prefHeight="26.0"
+			prefWidth="88.0" text="이전" />
+		<MenuButton fx:id="btnperson" alignment="CENTER"
+			layoutX="448.0" layoutY="213.0" mnemonicParsing="false"
+			onAction="#person" prefHeight="26.0" prefWidth="76.0" text="인원">
+			<items>
+				<MenuItem mnemonicParsing="false" text="1명" />
+				<MenuItem mnemonicParsing="false" text="2명" />
+				<MenuItem mnemonicParsing="false" text="3명" />
+				<MenuItem mnemonicParsing="false" text="4명" />
+			</items>
+		</MenuButton>
+		<Button fx:id="btnnext" layoutX="454.0" layoutY="344.0"
+			mnemonicParsing="false" onAction="#next" prefHeight="26.0"
+			prefWidth="88.0" text="다음" />
+		<Label layoutX="302.0" layoutY="49.0" prefHeight="36.0"
+			prefWidth="267.0" text="블랙위도우 (BlackWidow)">
+			<font>
+				<Font name="Arial" size="23.0" />
+			</font>
+		</Label>
+		<Label layoutX="316.0" layoutY="100.0" text="12세 이상 관람가">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="314.0" layoutY="136.0" prefHeight="14.0"
+			prefWidth="224.0" text="개요   :         액션   /   미국   /   134분">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="315.0" layoutY="160.0" prefHeight="14.0"
+			prefWidth="224.0" text="개봉  :          2021 . 07 . 07">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+	</children>
 </AnchorPane>
