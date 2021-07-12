@@ -36,20 +36,23 @@ public class AdminMovieDao {
 			String SQL = "insert into movie(mtitle,mgenre,moutline,mrelease,mrating,mprice,mimage,mcondition)"+ "values(?,?,?,?,?,?,?,?)";
 			PreparedStatement statement = conn.prepareStatement(SQL);
 			statement.setString(1, movie.getMtitle()); 		
+			
 			statement.setString(2, movie.getMgenre());		
 			statement.setString(3, movie.getMoutline());	
 			statement.setString(4, movie.getMrelease());	
 			statement.setString(5, movie.getMrating());		
-			statement.setInt(6, movie.getMprice());			
-			statement.setString(7, movie.getMimage());		
-			statement.setInt(8, 0 );	
+			statement.setInt(6, movie.getMprice());
+			statement.setString(7, movie.getMimage());	
+			statement.setInt(8, movie.getMcondition() );
 			statement.executeUpdate();
+			
 			return 1;
 
 		} catch (Exception e) {
 			// TODO: handle exception
 			
 		}
+		
 		return 0;
 	}
 	
@@ -74,8 +77,12 @@ public class AdminMovieDao {
 							adminMovie.setMtitle( resultSet.getString(2));
 							adminMovie.setMgenre( resultSet.getString(3));
 							adminMovie.setMoutline( resultSet.getString(4));
+							adminMovie.setMrelease( resultSet.getString(5));
 							adminMovie.setMrating( resultSet.getString(6));
 							adminMovie.setMprice( resultSet.getInt(7));
+							adminMovie.setMimage( resultSet.getString(8));
+							adminMovie.setMcondition( resultSet.getInt(9));
+							
 							
 							adminMovies.add(adminMovie); // 리스트 담기 
 					}
@@ -89,6 +96,53 @@ public class AdminMovieDao {
 				
 				return null; // db 오류시 null 반환 
 			}
+	
+	//업데이트 메소드 
+	public int updatemovie( AdminMovie adminMovie , AdminMovie adminMovie2 ) {
+		
+		// 1. SQL 작성
+		String SQL = "update movie set mtitle=?,mgenre=?,moutline=?,mrelease=?,mrating=?,mprice=?,mimage=?,mcondition=? where mno = ?";
+		//2. SQL 조작
+		try {
+			PreparedStatement statement = conn.prepareStatement(SQL);
+			statement.setString(1, adminMovie2.getMtitle() );
+			statement.setString(2, adminMovie2.getMgenre() );
+			statement.setString(3, adminMovie2.getMoutline() );
+			statement.setString(4, adminMovie2.getMrelease() );
+			statement.setString(5, adminMovie2.getMrating() );
+			statement.setInt(6, adminMovie2.getMprice() );
+			statement.setString(7, adminMovie2.getMimage() );
+			statement.setInt(8, adminMovie2.getMcondition() );
+			
+			statement.setInt(9, adminMovie.getMno() );
+			
+			
+			//3.SQL 실행
+			statement.executeUpdate();
+			//4.SQL 결과
+			return 1; // 변경 성공
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		return 0; // 실패 
+	}
+	
+	// 영화 삭제 메소드
+	
+	public int delmovie( AdminMovie adminMovie) {
+		String SQL = "delete from movie where mno =? ";
+		try {
+			PreparedStatement statement = conn.prepareStatement(SQL);
+			statement.setInt(1, adminMovie.getMno() );
+			statement.executeUpdate();
+			return 1;	// 성공
+		}
+		catch (Exception e) {
+		}
+		return 0 ;
+		
+	}
 		
 		
 	

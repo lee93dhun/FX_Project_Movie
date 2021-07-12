@@ -17,6 +17,12 @@
             <Font name="Arial" size="19.0" />
          </font>
       </Label>
+      <RadioButton fx:id="rbtn_2" layoutX="513.0" layoutY="88.0" mnemonicParsing="false" text="상영준비중">
+         <toggleGroup>
+            <ToggleGroup fx:id="condition" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtn_1" layoutX="423.0" layoutY="88.0" mnemonicParsing="false" text="상영중" toggleGroup="$condition" />
       <Label layoutX="346.0" layoutY="133.0" prefHeight="19.0" prefWidth="35.0" text="제목">
          <font>
             <Font size="15.0" />
@@ -47,7 +53,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="btnmadd" layoutX="508.0" layoutY="464.0" mnemonicParsing="false" onAction="#madd" prefHeight="25.0" prefWidth="99.0" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;" text="등록" />
+      <Button fx:id="btnmupdate" layoutX="394.0" layoutY="464.0" mnemonicParsing="false" onAction="#mupdate" prefHeight="25.0" prefWidth="99.0" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;" text="수정" />
       <TextField fx:id="txttitle" layoutX="409.0" layoutY="126.0" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
@@ -83,13 +89,8 @@
             <DropShadow height="1.23" radius="0.0" width="0.0" />
          </effect>
       </ImageView>
-      <Button fx:id="btnupload" layoutX="116.0" layoutY="426.0" mnemonicParsing="false" onAction="#upload" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;" text="Image Upload" />
-      <Label fx:id="lblpath" layoutX="228.0" layoutY="429.0" prefHeight="21.0" prefWidth="388.0" text="파일경로" />
-      <RadioButton fx:id="rbtn_2" layoutX="516.0" layoutY="88.0" mnemonicParsing="false" text="상영준비중">
-         <toggleGroup>
-            <ToggleGroup fx:id="condition" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton fx:id="rbtn_1" layoutX="420.0" layoutY="89.0" mnemonicParsing="false" text="상영중" toggleGroup="$condition" />
+      <Button fx:id="btnupload" layoutX="43.0" layoutY="427.0" mnemonicParsing="false" onAction="#upload" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;" text="Image Upload" />
+      <Label fx:id="lblpath" layoutX="152.0" layoutY="428.0" prefHeight="21.0" prefWidth="461.0" text="파일경로" />
+      <Button fx:id="btnmdelete" layoutX="508.0" layoutY="464.0" mnemonicParsing="false" onAction="#mdelete" prefHeight="25.0" prefWidth="99.0" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;" text="삭제" />
    </children>
 </AnchorPane>

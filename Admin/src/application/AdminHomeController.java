@@ -15,7 +15,15 @@ import javafx.stage.Stage;
 
 public class AdminHomeController implements Initializable{
 	
-	public AdminHomeController() {}
+	private static AdminHomeController instance; // 임시객체
+	
+	public AdminHomeController() {
+		instance = this;
+	}
+	
+	public static AdminHomeController getintance() {
+		return instance;
+	}
 	
 	
 	@Override

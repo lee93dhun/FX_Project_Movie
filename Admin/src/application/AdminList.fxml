@@ -15,12 +15,14 @@
       </Label>
       <TableView fx:id="tableview" layoutX="19.0" layoutY="47.0" prefHeight="445.0" prefWidth="609.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
         <columns>
-          <TableColumn prefWidth="30.000001907348633" text="NO" />
-          <TableColumn prefWidth="190.66669082641602" text="제목" />
-            <TableColumn prefWidth="68.66661071777344" text="장르" />
-            <TableColumn minWidth="0.0" prefWidth="134.66668701171875" text="개요" />
-            <TableColumn prefWidth="114.66671752929688" text="관람등급" />
-            <TableColumn prefWidth="64.0" text="가격" />
+          <TableColumn prefWidth="24.666688919067383" text="NO" />
+          <TableColumn prefWidth="140.66662979125977" text="제목" />
+            <TableColumn prefWidth="51.33331298828125" text="장르" />
+            <TableColumn minWidth="0.0" prefWidth="88.66667175292969" text="개요" />
+            <TableColumn prefWidth="81.33331298828125" text="개봉일" />
+            <TableColumn prefWidth="112.66671752929688" text="관람등급" />
+            <TableColumn prefWidth="66.0" text="가격" />
+            <TableColumn prefWidth="41.333251953125" text="상태" />
         </columns>
       </TableView>
    </children>

@@ -2,6 +2,11 @@ package application;
 
 public class AdminMovie {
 	
+	public AdminMovie() {
+	}
+
+	
+	
 	private int mno;
 	private String mtitle;
 	private String mgenre;
@@ -12,10 +17,9 @@ public class AdminMovie {
 	private String mimage;
 	private int mcondition;
 	
-	public AdminMovie() {}
 
-	public AdminMovie(int mno, String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
-			String mimage) {
+	
+	public AdminMovie(int mno, String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,String mimage, int mcondition) {
 		this.mno = mno;
 		this.mtitle = mtitle;
 		this.mgenre = mgenre;
@@ -24,20 +28,13 @@ public class AdminMovie {
 		this.mrating = mrating;
 		this.mprice = mprice;
 		this.mimage = mimage;
+		this.mcondition = mcondition;
 	}
 	
-	public AdminMovie(int mno, String mtitle, String mgenre, String moutline, String mrating, int mprice) {
-		this.mno = mno;
-		this.mtitle = mtitle;
-		this.mgenre = mgenre;
-		this.moutline = moutline;
-		this.mrating = mrating;
-		this.mprice = mprice;
-	}
 	
 
-	public AdminMovie(String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
-			String mimage) {
+	public AdminMovie( String mtitle, String mgenre, String moutline, String mrelease, String mrating, int mprice,
+			String mimage, int mcondition) {
 		this.mtitle = mtitle;
 		this.mgenre = mgenre;
 		this.moutline = moutline;
@@ -45,6 +42,7 @@ public class AdminMovie {
 		this.mrating = mrating;
 		this.mprice = mprice;
 		this.mimage = mimage;
+		this.mcondition = mcondition;
 	}
 
 	public int getMno() {
