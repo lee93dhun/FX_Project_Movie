@@ -56,7 +56,7 @@ public class MovieDao {
 		
 		Movie movie = new Movie();
 		
-		String SQL = "select *from movie where mtitle=?";
+		String SQL = "select *from movie ";
 		try {
 		PreparedStatement statement = conn.prepareStatement(SQL);
 		statement.setString(1, mtitle);

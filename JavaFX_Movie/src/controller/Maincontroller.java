@@ -3,6 +3,8 @@ package controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import DAO.MovieDao;
+import domain.Movie;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,21 +19,28 @@ import javafx.stage.Stage;
 
 public class Maincontroller implements Initializable {
 
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
+		MovieDao movieDao = MovieDao.getmovieDao();
+		
+		while(true) {
+			
+		}
 
 		
 
 	}
 
 	@FXML
-	private ImageView img_1;
+	private ImageView movie_1;
 
 	@FXML
-	private ImageView img_2;
+	private ImageView movie_2;
 
 	@FXML
-	private ImageView img_3;
+	private ImageView movie_3;
 
 	@FXML
 	private Button btnticketing_1;
@@ -50,7 +59,7 @@ public class Maincontroller implements Initializable {
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : selet time");
+			stage.setTitle("POPCORN CINEMA : select time");
 			stage.show();
 			
 		} catch (Exception e) {
@@ -66,7 +75,7 @@ public class Maincontroller implements Initializable {
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : selet time");
+			stage.setTitle("POPCORN CINEMA : select time");
 			stage.show();
 			
 		} catch (Exception e) {
@@ -83,7 +92,7 @@ public class Maincontroller implements Initializable {
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : selet time");
+			stage.setTitle("POPCORN CINEMA : select time");
 			stage.show();
 		
 		} catch (Exception e) {
