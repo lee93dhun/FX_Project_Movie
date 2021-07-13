@@ -54,32 +54,32 @@
          </font>
       </Label>
       <Button fx:id="btnmupdate" layoutX="394.0" layoutY="464.0" mnemonicParsing="false" onAction="#mupdate" prefHeight="25.0" prefWidth="99.0" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;" text="수정" />
-      <TextField fx:id="txttitle" layoutX="409.0" layoutY="126.0" style="-fx-border-color: DC143C;">
+      <TextField fx:id="txttitle" layoutX="409.0" layoutY="126.0" promptText="영화제목" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtgenre" layoutX="409.0" layoutY="176.0" style="-fx-border-color: DC143C;">
+      <TextField fx:id="txtgenre" layoutX="409.0" layoutY="176.0" promptText="장르" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtoutline" layoutX="409.0" layoutY="226.0" style="-fx-border-color: DC143C;">
+      <TextField fx:id="txtoutline" layoutX="409.0" layoutY="226.0" promptText="국가/xx분" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtrelease" layoutX="409.0" layoutY="276.0" style="-fx-border-color: DC143C;">
+      <TextField fx:id="txtrelease" layoutX="409.0" layoutY="276.0" promptText="YYYY.MM.DD" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtrating" layoutX="409.0" layoutY="326.0" style="-fx-border-color: DC143C;">
+      <TextField fx:id="txtrating" layoutX="409.0" layoutY="326.0" promptText="xx세이상관람가" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtprice" layoutX="409.0" layoutY="376.0" style="-fx-border-color: DC143C;">
+      <TextField fx:id="txtprice" layoutX="409.0" layoutY="376.0" promptText="예매가격" style="-fx-border-color: DC143C;">
          <font>
             <Font size="15.0" />
          </font>

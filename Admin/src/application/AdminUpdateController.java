@@ -37,9 +37,14 @@ public class AdminUpdateController implements Initializable{
 		txtrelease.setText( adminMovie.getMrelease() );
 		txtrating.setText( adminMovie.getMrating() );
 		txtprice.setText(String.valueOf(adminMovie.getMprice()) );
+		
 		Image image = new Image( adminMovie.getMimage() );
 		imgmovie.setImage( image );
+		
 		lblpath.setText(adminMovie.getMimage()); 
+		
+		mimage = adminMovie.getMimage();
+		
 		adminMovie.getMcondition();
 		if(adminMovie.getMcondition() == 1) {
 			rbtn_1.setSelected(true);
@@ -100,12 +105,16 @@ public class AdminUpdateController implements Initializable{
 	    	
 	    	
 	    	AdminMovieDao adminMovieDao = AdminMovieDao.getmovieDao();
+	    
+	    	int condition = 0;
+	    	if( rbtn_1.isSelected() ) { condition = 1;}
+	    	if( rbtn_2.isSelected() ) { condition = 0;}
 	    	
-	    	if( rbtn_1.isSelected() ) adminMovie.getMcondition();
-	    	if( rbtn_2.isSelected() ) adminMovie.getMcondition();
+	    	
+	    	
 	    	
 	    	AdminMovie adminMovie2 = new AdminMovie( adminMovie.getMno() , txttitle.getText(), txtgenre.getText(),txtoutline.getText(), txtrelease.getText()
-	    			,txtrating.getText(),Integer.parseInt(txtprice.getText() ),adminMovie.getMimage(), adminMovie.getMcondition()  );   	
+	    			,txtrating.getText(),Integer.parseInt(txtprice.getText() ),mimage, condition  );   	
 	    			
 	    	int result = adminMovieDao.updatemovie(  adminMovie , adminMovie2 );
 	    	if( result == 1 ) { // 수정 성공했을때 
@@ -140,8 +149,10 @@ public class AdminUpdateController implements Initializable{
 
 	    private Stage filestage;
 	    private static String mimage;
+	    
 	    @FXML
 	    void upload(ActionEvent event) {
+	    	
 	    	
 	    	FileChooser fileChooser = new FileChooser();
 	    	fileChooser.getExtensionFilters().addAll( new ExtensionFilter("그림파일 : Image File", "*.png" , "*jpg" ,"*gif") );

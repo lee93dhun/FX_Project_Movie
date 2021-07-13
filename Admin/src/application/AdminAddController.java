@@ -74,7 +74,6 @@ public class AdminAddController implements Initializable{
 	    void madd(ActionEvent event) {
 	    	
 	    	String mtitle = txttitle.getText();
-	    
 	    	String mgenre = txtgenre.getText();
 	    	String moutline = txtoutline.getText();
 	    	String mrelease = txtrelease.getText();

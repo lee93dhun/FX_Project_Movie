@@ -113,7 +113,6 @@ public class AdminMovieDao {
 			statement.setInt(6, adminMovie2.getMprice() );
 			statement.setString(7, adminMovie2.getMimage() );
 			statement.setInt(8, adminMovie2.getMcondition() );
-			
 			statement.setInt(9, adminMovie.getMno() );
 			
 			
