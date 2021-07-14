@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 import domain.Movie;
 
@@ -21,7 +23,7 @@ public class MovieDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/javafx_movie?serverTime=UTC", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_movie?serverTime=UTC", "root", "1234");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -81,6 +83,36 @@ public class MovieDao {
 		}
 		return null;
 	}
+	
+	//메인에 이미지 가져오는 메소드
+	public ArrayList<Movie> main_movie() {
+		String SQL = "select from * movie where mcondition = 1";
+		
+		ArrayList<Movie> movies = new ArrayList<Movie>();
+		try {
+			PreparedStatement statement = conn.prepareStatement(SQL);
+			ResultSet resultSet = statement.executeQuery();
+			
+			while(resultSet.next() ) {
+				Movie mainmovie = new Movie();
+				
+				mainmovie.setMno(resultSet.getInt(1));
+				mainmovie.setMimage(resultSet.getString(8));
+				
+				movies.add(mainmovie);
+			}
+			return movies;
+			
+		} catch (SQLException e) {	
+			e.printStackTrace();
+		}
+	
+		return null;
+		
+	}
+	
+	
+	
 	
 	
 	

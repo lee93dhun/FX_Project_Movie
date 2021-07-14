@@ -40,6 +40,8 @@ public class Movie {
 		this.mimage = mimage;
 		this.mcondition = mcondition;
 	}
+	
+	
 
 	public int getMno() {
 		return mno;

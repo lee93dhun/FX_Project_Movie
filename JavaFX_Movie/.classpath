@@ -51,5 +51,10 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/lee93/수업/수업자료 다운로드/Library/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
