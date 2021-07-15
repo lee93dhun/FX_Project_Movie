@@ -28,14 +28,32 @@ public class Maincontroller implements Initializable {
 		
 		
 		
-		Image image = new Image( movies.get(0).getMimage());
+//		Image image = new Image( movies.get(0).getMimage());
+//		
+//		while(true) {
+//			movie_1.setImage(image);
+//			movie_2.setImage(image);
+//			movie_3.setImage(image);
+//		}
+//		
 		
-		while(true) {
-			movie_1.setImage(image);
-			movie_2.setImage(image);
-			movie_3.setImage(image);
+		for( int i = 0 ; i<3 ; i++ ) {
+			
+			Image image = new Image( movies.get(i).getMimage());
+			if( i == 0 ) {
+				movie_1.setImage( image );
+				moviecode1 =  movies.get(i).getMno();
+			}
+			if( i == 1 ) {
+				movie_2.setImage( image );
+				moviecode2 =  movies.get(i).getMno();
+			}
+			if( i == 2 ) {
+				movie_3.setImage( image );
+				moviecode3 =  movies.get(i).getMno();
+			}
+			
 		}
-		
 		
 		
 
@@ -53,19 +71,20 @@ public class Maincontroller implements Initializable {
 	private ImageView movie_3;
 
 	@FXML
-	private Button btnticketing_1;
+	private Button btnticketing_1;	int moviecode1 = -1;
 
 	@FXML
-	private Button btnticketing_2;
+	private Button btnticketing_2;	int moviecode2 = -1;
 
 	@FXML
-	private Button btnticketing_3;
+	private Button btnticketing_3;	int moviecode3 = -1;
 
 	@FXML
 	void ticketing_1(ActionEvent event) {
+		System.out.println( " 선택한 영화는 : " + moviecode1 );
 		try {
 			Stage stage = new Stage();
-			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Time_1.fxml"));
+			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Time.fxml"));
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setResizable(false);

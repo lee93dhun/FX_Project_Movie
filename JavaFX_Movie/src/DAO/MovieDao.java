@@ -86,7 +86,7 @@ public class MovieDao {
 	
 	//메인에 이미지 가져오는 메소드
 	public ArrayList<Movie> main_movie() {
-		String SQL = "select from * movie where mcondition = 1";
+		String SQL = "select * from  movie where mcondition = 1";
 		
 		ArrayList<Movie> movies = new ArrayList<Movie>();
 		try {

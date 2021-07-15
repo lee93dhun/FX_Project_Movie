@@ -11,17 +11,17 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Timecontroller">
 	<children>
-		<ImageView fx:id="img_t_movie" fitHeight="446.0" fitWidth="312.0" layoutX="59.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fx:id="img" fitHeight="446.0" fitWidth="312.0" layoutX="59.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@Mainimg_1.jpg" />
 			</image>
 		</ImageView>
-		<Label fx:id="txt_t_title" layoutX="433.0" layoutY="62.0" prefHeight="36.0" prefWidth="325.0" text="insert title">
+		<Label layoutX="433.0" layoutY="62.0" prefHeight="36.0" prefWidth="325.0" text="insert title">
 			<font>
 				<Font name="Arial" size="30.0" />
 			</font>
 		</Label>
-		<Label fx:id="txt_t_rating" layoutX="433.0" layoutY="113.0" text="insert rating">
+		<Label layoutX="433.0" layoutY="113.0" text="insert rating">
 			<font>
 				<Font size="15.0" />
 			</font>
@@ -31,7 +31,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="txt_t_genre" layoutX="641.0" layoutY="161.0" prefHeight="18.0" prefWidth="101.0" text="insert genre">
+      <Label layoutX="641.0" layoutY="161.0" prefHeight="18.0" prefWidth="101.0" text="insert genre">
          <font>
             <Font size="14.0" />
          </font>
@@ -41,7 +41,7 @@
 				<Font size="14.0" />
 			</font>
 		</Label>
-      <Label fx:id="txt_t_outline" layoutX="641.0" layoutY="210.0" prefHeight="18.0" prefWidth="101.0" text="insert outline">
+      <Label layoutX="641.0" layoutY="210.0" prefHeight="18.0" prefWidth="101.0" text="insert outline">
          <font>
             <Font size="14.0" />
          </font>
@@ -51,16 +51,16 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="txt_t_release" layoutX="641.0" layoutY="262.0" prefHeight="18.0" prefWidth="101.0" text="insert release">
+      <Label layoutX="641.0" layoutY="271.0" prefHeight="18.0" prefWidth="101.0" text="insert release">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-		<MenuButton fx:id="btntimebox" alignment="CENTER" layoutX="527.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="상영시간을 선택하세요">
+		<MenuButton fx:id="btntimebox" alignment="CENTER" layoutX="527.0" layoutY="312.0" mnemonicParsing="false" onAction="#timebox" prefHeight="26.0" prefWidth="199.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="상영시간을 선택하세요">
 			<items>
-				<MenuItem fx:id="mitime_1" mnemonicParsing="false" onAction="#time_1" text="09 : 00" />
-				<MenuItem fx:id="mitime_2" mnemonicParsing="false" onAction="#time_2" text="15 : 00" />
-				<MenuItem fx:id="mitime_3" mnemonicParsing="false" onAction="#time_3" text="21 : 00" />
+				<MenuItem mnemonicParsing="false" text="09 : 00" />
+				<MenuItem mnemonicParsing="false" text="15 : 00" />
+				<MenuItem mnemonicParsing="false" text="21 : 00" />
 			</items>
 		</MenuButton>
 		<Button fx:id="btnbefore" layoutX="528.0" layoutY="454.0" mnemonicParsing="false" onAction="#before" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="이전" />
