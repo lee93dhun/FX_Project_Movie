@@ -29,29 +29,36 @@ public class MovieDao {
 		}
 	}
 
-	public int addMovie(Movie movie) {
-
+	
+	public Movie getmovie2(int mno) {
+		
+		Movie movie = new Movie();
+		
+		String SQL = "select *from movie ";
 		try {
-			String SQL = "insert into movie(mtitle,mgenre,moutline,mrelease,mrating,mprice,mimage,mcondition)"
-					+ "values(?,?,?,?,?,?,?,?)";
-			PreparedStatement statement = conn.prepareStatement(SQL);
-			
-			statement.setString(1, movie.getMtitle());
-			statement.setString(2, movie.getMgenre());
-			statement.setString(3, movie.getMoutline());
-			statement.setString(4, movie.getMrelease());
-			statement.setString(5, movie.getMrating());
-			statement.setInt(6, movie.getMprice());
-			statement.setString(7, movie.getMimage());
-			statement.setInt(8, movie.getMcondition());
-			
-			statement.executeUpdate();
-			return 1;
-
-		} catch (Exception e) {
+		PreparedStatement statement = conn.prepareStatement(SQL);
+		statement.setInt(1, mno);
+		
+		ResultSet resultSet = statement.executeQuery();
+		
+		if(resultSet.next()) {
+			movie.setMno(resultSet.getInt(1));
+			movie.setMtitle(resultSet.getString(2));
+			movie.setMgenre(resultSet.getString(3));
+			movie.setMoutline(resultSet.getString(4));
+			movie.setMrelease(resultSet.getString(5));
+			movie.setMrating(resultSet.getString(6));
+			movie.setMprice(resultSet.getInt(7));
+			movie.setMimage(resultSet.getString(8));
+			movie.setMcondition(resultSet.getInt(9));
+			return movie;
+		}
+		
+		}
+		catch (Exception e) {
 			// TODO: handle exception
 		}
-		return 0;
+		return null;
 	}
 	
 	public Movie getmovie(String mtitle) {
@@ -110,6 +117,10 @@ public class MovieDao {
 		return null;
 		
 	}
+	
+	
+	
+	
 	
 	
 	

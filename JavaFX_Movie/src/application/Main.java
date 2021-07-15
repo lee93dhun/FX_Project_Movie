@@ -1,10 +1,12 @@
 package application;
 	
+import controller.Maincontroller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 
 
 public class Main extends Application {
@@ -15,7 +17,8 @@ public class Main extends Application {
 			Scene scene = new Scene(parent);
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
-			primaryStage.setTitle("MEGA CINEMA : select movie");
+			primaryStage.setTitle("POPCORN CINEMA");
+//			primaryStage.getIcons().add(new Image("popcorn.jpg"));
 			
 			primaryStage.show();
 			

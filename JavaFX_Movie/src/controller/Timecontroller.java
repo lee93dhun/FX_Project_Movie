@@ -4,6 +4,8 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import DAO.MovieDao;
+import domain.Movie;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,28 +24,56 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class Timecontroller implements Initializable {
+	
+	public int mno;
+	 int moviecode1 = Maincontroller.GetInstance().getMoviecode1();
+	 int moviecode2 = Maincontroller.GetInstance().getMoviecode2();
+	 int moviecode3 = Maincontroller.GetInstance().getMoviecode3();
+	 int buttonch = Maincontroller.GetInstance().getbuttonch();
+	
+	
+
+	
+	
+	
+	
+	
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
+		MovieDao movieDao = MovieDao.getmovieDao();
+//		Movie movie = MovieDao.getmovie2(mno);
+		
+		
+		if( buttonch == 1 ) {
+			
+			
+				
+		}else if (  buttonch == 2 ) {
+				
+		}else if (  buttonch == 3 ) {
+			
+		}
+		
 	}
 	@FXML
     private ImageView img_t_movie;
 
     @FXML
-    private Label txt_t_title;
+    private Label lbl_t_title;
 
     @FXML
-    private Label txt_t_rating;
+    private Label lbl_t_rating;
 
     @FXML
-    private Label txt_t_genre;
+    private Label lbl_t_genre;
 
     @FXML
-    private Label txt_t_outline;
+    private Label lbl_t_outline;
 
     @FXML
-    private Label txt_t_release;
+    private Label lbl_t_release;
 
     @FXML
     private MenuButton btntimebox;
@@ -70,18 +100,8 @@ public class Timecontroller implements Initializable {
 		alert.setHeaderText("뒤로가기");
 		Optional<ButtonType> result = alert.showAndWait();
 		if (result.get() == ButtonType.OK) {
-			try {
-				Stage stage = new Stage();
-				Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Main.fxml"));
-				Scene scene = new Scene(parent);
-				stage.setResizable(false);
-				stage.setTitle("POPCORN CINEMA : selet movie");
-				stage.setScene(scene);
-				stage.show();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			
+			Maincontroller.GetInstance().loadpage("Main");
 		}
 
     }

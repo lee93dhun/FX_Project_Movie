@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -15,9 +16,38 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class Maincontroller implements Initializable {
+	
+	private static Maincontroller instance;
+	
+	public Maincontroller() {
+		instance = this;
+	}
+	public static Maincontroller GetInstance() {
+		return instance;
+	}
+	
+	public static int getMoviecode1() {
+		return moviecode1;
+	}
+	public static int getMoviecode2() {
+		return moviecode2;
+	}
+	public static int getMoviecode3() {
+		return moviecode3;
+	}
+	
+	public static int buttonch=0;
+	
+	
+	
+	public static int getbuttonch() {
+		return buttonch;
+	}
 
 	
 	@Override
@@ -25,17 +55,6 @@ public class Maincontroller implements Initializable {
 
 		MovieDao movieDao = MovieDao.getmovieDao();
 		ArrayList<Movie> movies = movieDao.main_movie( );
-		
-		
-		
-//		Image image = new Image( movies.get(0).getMimage());
-//		
-//		while(true) {
-//			movie_1.setImage(image);
-//			movie_2.setImage(image);
-//			movie_3.setImage(image);
-//		}
-//		
 		
 		for( int i = 0 ; i<3 ; i++ ) {
 			
@@ -60,7 +79,10 @@ public class Maincontroller implements Initializable {
 		
 
 	}
-
+	
+	@FXML
+	private BorderPane borderpane;
+	
 	@FXML
 	private ImageView movie_1;
 
@@ -71,63 +93,43 @@ public class Maincontroller implements Initializable {
 	private ImageView movie_3;
 
 	@FXML
-	private Button btnticketing_1;	int moviecode1 = -1;
+	private Button btnticketing_1;	static int moviecode1 = -1;
 
 	@FXML
-	private Button btnticketing_2;	int moviecode2 = -1;
+	private Button btnticketing_2;	static int moviecode2 = -1;
 
 	@FXML
-	private Button btnticketing_3;	int moviecode3 = -1;
+	private Button btnticketing_3;	static int moviecode3 = -1;
 
 	@FXML
 	void ticketing_1(ActionEvent event) {
-		System.out.println( " 선택한 영화는 : " + moviecode1 );
-		try {
-			Stage stage = new Stage();
-			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Time.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setScene(scene);
-			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : select time");
-			stage.show();
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		buttonch =1;
+		loadpage("Time");
+		
 	}
 
 	@FXML
 	void ticketing_2(ActionEvent event) {
-		try {
-			Stage stage = new Stage();
-			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Time_1.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setScene(scene);
-			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : select time");
-			stage.show();
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
+		buttonch =2;
+		loadpage("Time");
 	}
 
 	@FXML
 	void ticketing_3(ActionEvent event) {
-		try {
-			Stage stage = new Stage();
-			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Time_1.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setScene(scene);
-			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : select time");
-			stage.show();
+		buttonch =3;
+		loadpage("Time");
+	}
+	
+	// 레이아웃 변경 메소드
+	public void loadpage (String page) {
 		
-		} catch (Exception e) {
-			// TODO: handle exception
+		try {
+			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/"+page+".fxml") );
+			borderpane.setCenter(parent);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
 	}
 
 }
