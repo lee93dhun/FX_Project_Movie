@@ -103,9 +103,9 @@ public class Maincontroller implements Initializable {
 
 	@FXML
 	void ticketing_1(ActionEvent event) {
+		
 		buttonch =1;
 		loadpage("Time");
-		
 	}
 
 	@FXML

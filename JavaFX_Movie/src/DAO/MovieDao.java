@@ -7,7 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import controller.Timecontroller;
 import domain.Movie;
+import javafx.fxml.Initializable;
 
 public class MovieDao {
 
@@ -34,12 +36,14 @@ public class MovieDao {
 		
 		Movie movie = new Movie();
 		
-		String SQL = "select *from movie ";
+		String SQL = "select * from movie where mno=?";
 		try {
 		PreparedStatement statement = conn.prepareStatement(SQL);
-		statement.setInt(1, mno);
+		statement.setInt(1,mno);
+		
 		
 		ResultSet resultSet = statement.executeQuery();
+		
 		
 		if(resultSet.next()) {
 			movie.setMno(resultSet.getInt(1));
@@ -51,6 +55,8 @@ public class MovieDao {
 			movie.setMprice(resultSet.getInt(7));
 			movie.setMimage(resultSet.getString(8));
 			movie.setMcondition(resultSet.getInt(9));
+			
+			
 			return movie;
 		}
 		

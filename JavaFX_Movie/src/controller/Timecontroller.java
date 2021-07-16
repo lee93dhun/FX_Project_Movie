@@ -1,6 +1,7 @@
 package controller;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -20,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -42,17 +44,40 @@ public class Timecontroller implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
-		MovieDao movieDao = MovieDao.getmovieDao();
-//		Movie movie = MovieDao.getmovie2(mno);
+		MovieDao movieDao = new MovieDao();
+		
+		Movie movie=new Movie();
 		
 		
 		if( buttonch == 1 ) {
 			
+			movie = movieDao.getmovie2(moviecode1);
 			
+			lbl_t_title.setText(movie.getMtitle());
+			lbl_t_rating.setText(movie.getMrating());
+			lbl_t_genre.setText(movie.getMgenre());
+			lbl_t_outline.setText(movie.getMoutline());
+			lbl_t_release.setText(movie.getMrelease());
+			Image image = new Image(movie.getMimage());
+			img_t_movie.setImage(image);
 				
 		}else if (  buttonch == 2 ) {
-				
+			System.out.println(moviecode2);
+			lbl_t_title.setText(movie.getMtitle());
+			lbl_t_rating.setText(movie.getMrating());
+			lbl_t_genre.setText(movie.getMgenre());
+			lbl_t_outline.setText(movie.getMoutline());
+			lbl_t_release.setText(movie.getMrelease());
+			img_t_movie.setImage(null);
+			
 		}else if (  buttonch == 3 ) {
+			System.out.println(moviecode3);
+			lbl_t_title.setText(movie.getMtitle());
+			lbl_t_rating.setText(movie.getMrating());
+			lbl_t_genre.setText(movie.getMgenre());
+			lbl_t_outline.setText(movie.getMoutline());
+			lbl_t_release.setText(movie.getMrelease());
+			img_t_movie.setImage(null);
 			
 		}
 		
