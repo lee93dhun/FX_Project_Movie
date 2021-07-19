@@ -24,11 +24,11 @@ import javafx.stage.Stage;
 
 public class Seatcontroller implements Initializable {
 	
-	 int moviecode1 = Maincontroller.GetInstance().getMoviecode1();
-	 int moviecode2 = Maincontroller.GetInstance().getMoviecode2();
-	 int moviecode3 = Maincontroller.GetInstance().getMoviecode3();
-	 int buttonch = Maincontroller.GetInstance().getbuttonch();
-
+	 int moviecode1 = Maincontroller.getMoviecode1();
+	 int moviecode2 = Maincontroller.getMoviecode2();
+	 int moviecode3 = Maincontroller.getMoviecode3();
+	 int buttonch = Maincontroller.getbuttonch();
+	 int timech = Timecontroller.timech;
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
@@ -41,6 +41,18 @@ public class Seatcontroller implements Initializable {
 			movie = movieDao.getmovie2(moviecode1);
 			
 			lblselectmovie.setText(movie.getMtitle());
+			
+			if( timech == 1) {
+				System.out.println();
+			}
+			else if ( timech == 2 ) {
+				System.out.println(timech);
+			}
+			else if  (timech == 3 ) {
+				System.out.println(timech);
+			}
+			
+			
 			
 		}else if (  buttonch == 2 ) {
 			movie = movieDao.getmovie2(moviecode2);

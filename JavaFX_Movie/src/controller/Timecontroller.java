@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+
 import DAO.MovieDao;
 import domain.Movie;
 import javafx.application.Platform;
@@ -31,9 +32,16 @@ public class Timecontroller implements Initializable {
 	 int moviecode1 = Maincontroller.GetInstance().getMoviecode1();
 	 int moviecode2 = Maincontroller.GetInstance().getMoviecode2();
 	 int moviecode3 = Maincontroller.GetInstance().getMoviecode3();
+	 
 	 int buttonch = Maincontroller.GetInstance().getbuttonch();
-	
-	
+	 
+	 public static int timech = 0;
+	 
+	 public static int getTimech() {
+		return timech;
+	}
+	 
+	 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
@@ -136,24 +144,41 @@ public class Timecontroller implements Initializable {
     void next(ActionEvent event) {
     	
     	Maincontroller.GetInstance().loadpage("seat");
+    	
 
     }
     
     public static String 색상1 = "-fx-border-color: #FFFFFF";
     public static String 색상2 = "-fx-background-color: #FFFFFF";
     
+    
+    
     @FXML
     void time_1(ActionEvent event) {
-    	
+    	timech = 1;
+    	if(buttonch == 1) {
+    		btntime_1.setText("07 : 00");
+    		System.out.println(btntime_1);
+    	}
+    	else if(buttonch == 2) {
+    		btntime_2.setText("13 : 30");
+    		System.out.println(btntime_2);
+    	}
+    	else if(buttonch == 3) {
+    		btntime_3.setText("20 : 30");
+    		System.out.println(btntime_3);
+    	}
     	btntime_1.setStyle(색상1);
     	btntime_2.setStyle(색상2);
     	btntime_3.setStyle(색상2);
+    	
+    	
 
     }
 
     @FXML
     void time_2(ActionEvent event) {
-    	
+    	timech = 2;
       	btntime_1.setStyle(색상2);
     	btntime_2.setStyle(색상1);
     	btntime_3.setStyle(색상2);
@@ -161,11 +186,15 @@ public class Timecontroller implements Initializable {
 
     @FXML
     void time_3(ActionEvent event) {
-    	
+    	timech = 3;
       	btntime_1.setStyle(색상2);
     	btntime_2.setStyle(색상2);
     	btntime_3.setStyle(색상1);
     }
+
+
+	
+	
 
 	
 
