@@ -30,18 +30,18 @@ public class Infocontroller implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
-		MovieDao movieDao = MovieDao.getmovieDao();
-		ReservationDao reservationDao = ReservationDao.getReservationDao();
-
-		Movie movie = movieDao.getmovie(mtitle);
-		Reservation reservation = reservationDao.getreservation(mno);
-
-		lblselecttitle.setText(movie.getMtitle());
-		lblselectgenre.setText(movie.getMgenre());
-		lblselecttime.setText(reservation.getRtime());
-		lblselectps.setText(String.valueOf(reservation.getPerson()));
-		lblselectseat.setText(reservation.getMseat());
-		lblprice.setText(String.valueOf(movie.getMprice()));
+//		MovieDao movieDao = MovieDao.getmovieDao();
+//		ReservationDao reservationDao = ReservationDao.getReservationDao();
+//
+//		Movie movie = movieDao.getmovie(mtitle);
+//		Reservation reservation = reservationDao.getreservation(mno);
+//
+//		lblselecttitle.setText(movie.getMtitle());
+//		lblselectgenre.setText(movie.getMgenre());
+//		lblselecttime.setText(reservation.getRtime());
+//		lblselectps.setText(String.valueOf(reservation.getPerson()));
+//		lblselectseat.setText(reservation.getMseat());
+//		lblprice.setText(String.valueOf(movie.getMprice()));
 
 	}
 

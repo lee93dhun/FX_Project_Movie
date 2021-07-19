@@ -23,30 +23,23 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class Timecontroller implements Initializable {
 	
-	public int mno;
 	 int moviecode1 = Maincontroller.GetInstance().getMoviecode1();
 	 int moviecode2 = Maincontroller.GetInstance().getMoviecode2();
 	 int moviecode3 = Maincontroller.GetInstance().getMoviecode3();
 	 int buttonch = Maincontroller.GetInstance().getbuttonch();
 	
 	
-
-	
-	
-	
-	
-	
-
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
 		MovieDao movieDao = new MovieDao();
 		
-		Movie movie=new Movie();
+		Movie movie = new Movie();
 		
 		
 		if( buttonch == 1 ) {
@@ -60,26 +53,42 @@ public class Timecontroller implements Initializable {
 			lbl_t_release.setText(movie.getMrelease());
 			Image image = new Image(movie.getMimage());
 			img_t_movie.setImage(image);
+			
+			btntime_1.setText("07 : 00");
+			btntime_2.setText("13 : 30");
+			btntime_3.setText("20 : 30");
 				
 		}else if (  buttonch == 2 ) {
-			System.out.println(moviecode2);
+			movie = movieDao.getmovie2(moviecode2);
+			
 			lbl_t_title.setText(movie.getMtitle());
 			lbl_t_rating.setText(movie.getMrating());
 			lbl_t_genre.setText(movie.getMgenre());
 			lbl_t_outline.setText(movie.getMoutline());
 			lbl_t_release.setText(movie.getMrelease());
-			img_t_movie.setImage(null);
+			Image image = new Image(movie.getMimage());
+			img_t_movie.setImage(image);
+				
+			btntime_1.setText("09 : 00");
+			btntime_2.setText("16 : 00");
+			btntime_3.setText("22 : 30");
 			
 		}else if (  buttonch == 3 ) {
-			System.out.println(moviecode3);
+			movie = movieDao.getmovie2(moviecode3);
+			
 			lbl_t_title.setText(movie.getMtitle());
 			lbl_t_rating.setText(movie.getMrating());
 			lbl_t_genre.setText(movie.getMgenre());
 			lbl_t_outline.setText(movie.getMoutline());
 			lbl_t_release.setText(movie.getMrelease());
-			img_t_movie.setImage(null);
+			Image image = new Image(movie.getMimage());
+			img_t_movie.setImage(image);
 			
+			btntime_1.setText("11 : 00");
+			btntime_2.setText("18 : 30");
+			btntime_3.setText("24 : 30");
 		}
+		
 		
 	}
 	@FXML
@@ -101,66 +110,61 @@ public class Timecontroller implements Initializable {
     private Label lbl_t_release;
 
     @FXML
-    private MenuButton btntimebox;
+    private Button btntime_1;
 
     @FXML
-    private MenuItem mitime_1;
+    private Button btntime_2;
 
     @FXML
-    private MenuItem mitime_2;
-
-    @FXML
-    private MenuItem mitime_3;
-
+    private Button btntime_3;
+    
     @FXML
     private Button btnbefore;
 
     @FXML
     private Button btnnext;
+    
 
     @FXML
     void before(ActionEvent event) {
-    	Alert alert = new Alert(AlertType.CONFIRMATION);
-		alert.setContentText("되돌아가시겠습니까?");
-		alert.setHeaderText("뒤로가기");
-		Optional<ButtonType> result = alert.showAndWait();
-		if (result.get() == ButtonType.OK) {
 			
 			Maincontroller.GetInstance().loadpage("Main");
-		}
 
     }
 
     @FXML
     void next(ActionEvent event) {
-    	try {
-			Stage stage = new Stage();
-			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/seat.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setResizable(false);
-			stage.setTitle("POPCORN CINEMA : selet seat");
-			stage.setScene(scene);
-			stage.show();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    	
+    	Maincontroller.GetInstance().loadpage("seat");
 
     }
-
+    
+    public static String 색상1 = "-fx-border-color: #FFFFFF";
+    public static String 색상2 = "-fx-background-color: #FFFFFF";
+    
     @FXML
     void time_1(ActionEvent event) {
+    	
+    	btntime_1.setStyle(색상1);
+    	btntime_2.setStyle(색상2);
+    	btntime_3.setStyle(색상2);
 
     }
 
     @FXML
     void time_2(ActionEvent event) {
-
+    	
+      	btntime_1.setStyle(색상2);
+    	btntime_2.setStyle(색상1);
+    	btntime_3.setStyle(색상2);
     }
 
     @FXML
     void time_3(ActionEvent event) {
-
+    	
+      	btntime_1.setStyle(색상2);
+    	btntime_2.setStyle(색상2);
+    	btntime_3.setStyle(색상1);
     }
 
 	
