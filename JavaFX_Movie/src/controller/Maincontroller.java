@@ -73,10 +73,8 @@ public class Maincontroller implements Initializable {
 			}
 			
 		}
-		
-		
-
-		
+	
+			
 
 	}
 	

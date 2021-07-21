@@ -20,6 +20,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Seatcontroller implements Initializable {
@@ -36,12 +37,16 @@ public class Seatcontroller implements Initializable {
 	 String movie_T3 = Timecontroller.getMovie_T3();
 	 
 	 int maxpeople = 0;
+		
 	 
+	 @FXML
+	    private AnchorPane pane;
 	 
 	 
 	 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
 		
 		MovieDao movieDao = new MovieDao();
 		Movie movie = new Movie();
@@ -260,9 +265,6 @@ public class Seatcontroller implements Initializable {
 	    private Label lblselecttime;
 
 	    @FXML
-	    private Label lblselectpeople;
-	    
-	    @FXML
 	    private Button btnbefore;
 
 	    @FXML
@@ -271,50 +273,51 @@ public class Seatcontroller implements Initializable {
 	    @FXML
 	    void before(ActionEvent event) {
 	    	Maincontroller.GetInstance().loadpage("Time");
+	    	
+	    	
 	    }
 
 	    @FXML
 	    void next(ActionEvent event) {
 	    	Maincontroller.GetInstance().loadpage("ReserveInfo");
 	    }
+	    
 
 	    @FXML
 	    void p_1(ActionEvent event) {
 	    	maxpeople = 1;
-	    	lblselectpeople.setText("1명");
 	    }
 
 	    @FXML
 	    void p_2(ActionEvent event) {
 	    	maxpeople = 2;
-	    	lblselectpeople.setText("2명");
 	    }
 
 	    @FXML
 	    void p_3(ActionEvent event) {
 	    	maxpeople = 3;
-	    	lblselectpeople.setText("3명");
 	    }
 
 	    @FXML
 	    void p_4(ActionEvent event) {
 	    	maxpeople = 4;
-	    	lblselectpeople.setText("4명");
 	    }
 	    
 	    @FXML
 	    void p_5(ActionEvent event) {
 	    	maxpeople = 5;
-	    	lblselectpeople.setText("5명");
 	    }
 
 	    @FXML
 	    void p_6(ActionEvent event) {
 	    	maxpeople = 6;
-	    	lblselectpeople.setText("6명");
 	    }
 	    
 ///////////////////////////////////////////////////////////SEAT A////////////////////////////
+	    
+	    public static String background_color = "-fx-background-color: #D03A3A";
+	    public static String font_color = "-fx-text-fill: #FFFFFF";
+	    
 	    @FXML
 	    void seat_a_1(ActionEvent event) {
 	    	if( maxpeople == 0 ) {
@@ -322,253 +325,598 @@ public class Seatcontroller implements Initializable {
 	    		alert.setTitle("POPCPORN CINEMA");
 	    		alert.setContentText("관람인원을 선택해 주세요.");
 	    		alert.show();
+	    	}else {
+	    		btnseat_a_1.setStyle(background_color);
 	    	}
 	    }
 
 	    @FXML
 	    void seat_a_2(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_2.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_3(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_3.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_4(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_4.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_5(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_5.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_6(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_6.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_7(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_7.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_8(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_8.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_9(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_9.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_a_10(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_a_10.setStyle(background_color);
+	    	}
 	    }
 ///////////////////////////////////////////////////////////SEAT B////////////////////////////
 	    @FXML
 	    void seat_b_1(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_1.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_2(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_2.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_3(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_3.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_4(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_4.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_5(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_5.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_6(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_6.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_7(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_7.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_8(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_8.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_b_9(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_9.setStyle(background_color);
+	    	}
 	    }
 	    
 	    @FXML
 	    void seat_b_10(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_b_10.setStyle(background_color);
+	    	}
 	    }
 ///////////////////////////////////////////////////////////SEAT C////////////////////////////
 	    @FXML
 	    void seat_c_1(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_1.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_2(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_2.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_3(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_3.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_4(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_4.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_5(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_5.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_6(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_6.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_7(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_7.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_8(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_8.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_c_9(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_9.setStyle(background_color);
+	    	}
 	    }
 	    
 	    @FXML
 	    void seat_c_10(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_c_10.setStyle(background_color);
+	    	}
 	    }
 
 ///////////////////////////////////////////////////////////SEAT D////////////////////////////
 	    @FXML
 	    void seat_d_1(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_1.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_2(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_2.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_3(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_3.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_4(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_4.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_5(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_5.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_6(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_6.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_7(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_7.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_8(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_8.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_d_9(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_9.setStyle(background_color);
+	    	}
 	    }
 	    
 	    @FXML
 	    void seat_d_10(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_d_10.setStyle(background_color);
+	    	}
 	    }
 ///////////////////////////////////////////////////////////SEAT E////////////////////////////
 	    @FXML
 	    void seat_e_1(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_1.setStyle(background_color);
+	    	}
 	    }
 
 
 	    @FXML
 	    void seat_e_2(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_2.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_3(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_3.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_4(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_4.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_5(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_5.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_6(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_6.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_7(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_7.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_8(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_8.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_9(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_9.setStyle(background_color);
+	    	}
 	    }
 
 	    @FXML
 	    void seat_e_10(ActionEvent event) {
-	    	
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}else {
+	    		btnseat_e_10.setStyle(background_color);
+	    	}
 	    }
 }

@@ -63,6 +63,8 @@ public class Timecontroller implements Initializable {
 		
 		Movie movie = new Movie();
 		
+		timech =0;
+		
 		
 		if( buttonch == 1 ) {
 			
@@ -151,7 +153,7 @@ public class Timecontroller implements Initializable {
     void before(ActionEvent event) {
 			
 			Maincontroller.GetInstance().loadpage("Main");
-
+			
     }
 
     @FXML
