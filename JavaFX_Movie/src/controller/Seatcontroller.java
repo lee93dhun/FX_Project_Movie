@@ -27,46 +27,58 @@ public class Seatcontroller implements Initializable {
 	 int moviecode1 = Maincontroller.getMoviecode1();
 	 int moviecode2 = Maincontroller.getMoviecode2();
 	 int moviecode3 = Maincontroller.getMoviecode3();
+	 
 	 int buttonch = Maincontroller.getbuttonch();
 	 int timech = Timecontroller.timech;
+	 
+	 String movie_T1 = Timecontroller.getMovie_T1();
+	 String movie_T2 = Timecontroller.getMovie_T2();
+	 String movie_T3 = Timecontroller.getMovie_T3();
+	 
+	 int maxpeople = 0;
+	 
+	 
+	 
+	 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
 		MovieDao movieDao = new MovieDao();
-		
 		Movie movie = new Movie();
 		
 		if( buttonch == 1 ) {
-			
 			movie = movieDao.getmovie2(moviecode1);
-			
 			lblselectmovie.setText(movie.getMtitle());
-			
 			if( timech == 1) {
-				System.out.println();
+				lblselecttime.setText(movie_T1);
+			}else if ( timech == 2 ) {
+				lblselecttime.setText(movie_T2);
+			}else if  (timech == 3 ) {
+				lblselecttime.setText(movie_T3);
 			}
-			else if ( timech == 2 ) {
-				System.out.println(timech);
-			}
-			else if  (timech == 3 ) {
-				System.out.println(timech);
-			}
-			
-			
 			
 		}else if (  buttonch == 2 ) {
 			movie = movieDao.getmovie2(moviecode2);
-			
 			lblselectmovie.setText(movie.getMtitle());
-				
+			if( timech == 1) {
+				lblselecttime.setText(movie_T1);
+			}else if ( timech == 2 ) {
+				lblselecttime.setText(movie_T2);
+			}else if  (timech == 3 ) {
+				lblselecttime.setText(movie_T3);
+			}
 			
 		}else if (  buttonch == 3 ) {
 			movie = movieDao.getmovie2(moviecode3);
-			
 			lblselectmovie.setText(movie.getMtitle());
-			
+			if( timech == 1) {
+				lblselecttime.setText(movie_T1);
+			}else if ( timech == 2 ) {
+				lblselecttime.setText(movie_T2);
+			}else if  (timech == 3 ) {
+				lblselecttime.setText(movie_T3);
+			}
 		}
-
 	}
 
 
@@ -84,6 +96,12 @@ public class Seatcontroller implements Initializable {
 
 	    @FXML
 	    private RadioButton rbtnp_4;
+	    
+	    @FXML
+	    private RadioButton rbtnp_5;
+
+	    @FXML
+	    private RadioButton rbtnp_6;
 ///////////////////////////////////////////////////////////SEAT A////////////////////////////
 	    @FXML
 	    private Button btnseat_a_1;
@@ -242,7 +260,7 @@ public class Seatcontroller implements Initializable {
 	    private Label lblselecttime;
 
 	    @FXML
-	    private Label lblselectperson;
+	    private Label lblselectpeople;
 	    
 	    @FXML
 	    private Button btnbefore;
@@ -262,27 +280,49 @@ public class Seatcontroller implements Initializable {
 
 	    @FXML
 	    void p_1(ActionEvent event) {
-
+	    	maxpeople = 1;
+	    	lblselectpeople.setText("1명");
 	    }
 
 	    @FXML
 	    void p_2(ActionEvent event) {
-
+	    	maxpeople = 2;
+	    	lblselectpeople.setText("2명");
 	    }
 
 	    @FXML
 	    void p_3(ActionEvent event) {
-
+	    	maxpeople = 3;
+	    	lblselectpeople.setText("3명");
 	    }
 
 	    @FXML
 	    void p_4(ActionEvent event) {
-
+	    	maxpeople = 4;
+	    	lblselectpeople.setText("4명");
 	    }
+	    
+	    @FXML
+	    void p_5(ActionEvent event) {
+	    	maxpeople = 5;
+	    	lblselectpeople.setText("5명");
+	    }
+
+	    @FXML
+	    void p_6(ActionEvent event) {
+	    	maxpeople = 6;
+	    	lblselectpeople.setText("6명");
+	    }
+	    
 ///////////////////////////////////////////////////////////SEAT A////////////////////////////
 	    @FXML
 	    void seat_a_1(ActionEvent event) {
-
+	    	if( maxpeople == 0 ) {
+	    		Alert alert = new Alert(AlertType.INFORMATION);
+	    		alert.setTitle("POPCPORN CINEMA");
+	    		alert.setContentText("관람인원을 선택해 주세요.");
+	    		alert.show();
+	    	}
 	    }
 
 	    @FXML

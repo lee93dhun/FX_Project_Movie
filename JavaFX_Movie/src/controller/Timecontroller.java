@@ -35,10 +35,24 @@ public class Timecontroller implements Initializable {
 	 
 	 int buttonch = Maincontroller.GetInstance().getbuttonch();
 	 
+	 static String movie_T1 = "";
+	 static String movie_T2 = "";
+	 static String movie_T3 = "";
+	 
 	 public static int timech = 0;
 	 
 	 public static int getTimech() {
 		return timech;
+	}
+	 
+	public static String getMovie_T1() {
+		return movie_T1;
+	}
+	public static String getMovie_T2() {
+		return movie_T2;
+	}
+	public static String getMovie_T3() {
+		return movie_T3;
 	}
 	 
 	 
@@ -118,7 +132,7 @@ public class Timecontroller implements Initializable {
     private Label lbl_t_release;
 
     @FXML
-    private Button btntime_1;
+    private Button btntime_1; 
 
     @FXML
     private Button btntime_2;
@@ -143,34 +157,39 @@ public class Timecontroller implements Initializable {
     @FXML
     void next(ActionEvent event) {
     	
-    	Maincontroller.GetInstance().loadpage("seat");
+    	if( timech == 1 || timech ==2 || timech == 3) {
     	
+    		Maincontroller.GetInstance().loadpage("seat");
+    	}else {
+    		Alert alert = new Alert(AlertType.INFORMATION);
+    		alert.setTitle("POPCPORN CINEMA");
+    		alert.setContentText("상영시간을 선택해주세요.");
+    		alert.show();
+    	}
 
     }
+    
+    
     
     public static String 색상1 = "-fx-border-color: #FFFFFF";
     public static String 색상2 = "-fx-background-color: #FFFFFF";
     
-    
-    
     @FXML
     void time_1(ActionEvent event) {
     	timech = 1;
-    	if(buttonch == 1) {
-    		btntime_1.setText("07 : 00");
-    		System.out.println(btntime_1);
-    	}
-    	else if(buttonch == 2) {
-    		btntime_2.setText("13 : 30");
-    		System.out.println(btntime_2);
-    	}
-    	else if(buttonch == 3) {
-    		btntime_3.setText("20 : 30");
-    		System.out.println(btntime_3);
-    	}
     	btntime_1.setStyle(색상1);
     	btntime_2.setStyle(색상2);
     	btntime_3.setStyle(색상2);
+    	
+    	if( buttonch == 1) {
+    		movie_T1 = "07 : 00";
+    	}
+    	else if(buttonch == 2) {
+    		movie_T1 = "09 : 00";
+    	}
+    	else if(buttonch == 3) {
+    		movie_T1 = "11 : 00";
+    	}
     	
     	
 
@@ -182,6 +201,16 @@ public class Timecontroller implements Initializable {
       	btntime_1.setStyle(색상2);
     	btntime_2.setStyle(색상1);
     	btntime_3.setStyle(색상2);
+    	
+    	if( buttonch == 1) {
+    		movie_T2 = "13 : 30";
+    	}
+    	else if(buttonch == 2) {
+    		movie_T2 = "16 : 00";
+    	}
+    	else if(buttonch == 3) {
+    		movie_T2 = "18 : 30";
+    	}
     }
 
     @FXML
@@ -190,6 +219,16 @@ public class Timecontroller implements Initializable {
       	btntime_1.setStyle(색상2);
     	btntime_2.setStyle(색상2);
     	btntime_3.setStyle(색상1);
+    	
+    	if( buttonch == 1) {
+    		movie_T3 = "20 : 30";
+    	}
+    	else if(buttonch == 2) {
+    		movie_T3 = "22 : 30";
+    	}
+    	else if(buttonch == 3) {
+    		movie_T3 = "24 : 30";
+    	}
     }
 
 
