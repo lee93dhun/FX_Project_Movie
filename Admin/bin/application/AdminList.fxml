@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminListController">
+   <children>
+      <Label layoutX="275.0" layoutY="14.0" text="영화리스트">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="19.0" layoutY="47.0" prefHeight="445.0" prefWidth="609.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
+        <columns>
+          <TableColumn prefWidth="24.666688919067383" text="NO" />
+          <TableColumn prefWidth="140.66662979125977" text="제목" />
+            <TableColumn prefWidth="51.33331298828125" text="장르" />
+            <TableColumn minWidth="0.0" prefWidth="88.66667175292969" text="개요" />
+            <TableColumn prefWidth="81.33331298828125" text="개봉일" />
+            <TableColumn prefWidth="112.66671752929688" text="관람등급" />
+            <TableColumn prefWidth="66.0" text="가격" />
+            <TableColumn prefWidth="41.333251953125" text="상태" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

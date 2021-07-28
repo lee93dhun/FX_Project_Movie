@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Seatcontroller">
+   <children>
+      <Label alignment="CENTER" layoutX="67.0" layoutY="18.0" prefHeight="40.0" prefWidth="658.0" style="-fx-background-color: #000000;" text="S C R E E N" textFill="WHITE" AnchorPane.bottomAnchor="462.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font name="Arial" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="426.0" prefHeight="17.0" prefWidth="65.0" text="인원선택">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbtnp_1" layoutX="339.0" layoutY="425.0" mnemonicParsing="false" onAction="#p_1" text=" 1 ">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="select_p" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtnp_2" layoutX="379.0" layoutY="425.0" mnemonicParsing="false" onAction="#p_2" text=" 2 " toggleGroup="$select_p">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtnp_3" layoutX="419.0" layoutY="425.0" mnemonicParsing="false" onAction="#p_3" text=" 3 " toggleGroup="$select_p">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtnp_4" layoutX="459.0" layoutY="425.0" mnemonicParsing="false" onAction="#p_4" text=" 4 " toggleGroup="$select_p">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtnp_5" layoutX="499.0" layoutY="425.0" mnemonicParsing="false" onAction="#p_5" text="5" toggleGroup="$select_p">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtnp_6" layoutX="539.0" layoutY="425.0" mnemonicParsing="false" onAction="#p_6" text="6" toggleGroup="$select_p">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="70.0" layoutY="107.0" text="A">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="157.0" text="B">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="207.0" text="C">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="257.0" text="D">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="307.0" text="E">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="578.3333129882812" endY="3.0517578125E-5" layoutX="143.0" layoutY="356.0" startX="-78.3333511352539" startY="3.0517578125E-5" />
+      <Label layoutX="136.0" layoutY="369.0" text="선택한 영화" />
+      <Label layoutX="136.0" layoutY="397.0" text="선택한 시간" />
+      <Label fx:id="lblselectmovie" layoutX="340.0" layoutY="368.0" text="SELETED MOVIE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblselecttime" layoutX="340.0" layoutY="396.0" text="SELETED TIME">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnbefore" layoutX="500.0" layoutY="465.0" mnemonicParsing="false" onAction="#before" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="이전" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="454.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnnext" layoutX="621.0" layoutY="465.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="다음" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="454.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <GridPane layoutX="113.0" layoutY="89.0" prefHeight="250.0" prefWidth="640.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="47.33333333333337" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

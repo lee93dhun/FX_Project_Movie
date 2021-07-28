@@ -24,81 +24,86 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class Infocontroller implements Initializable {
-	private String mtitle;
-	private int mno;
+	
+	int buttonch = Maincontroller.getbuttonch();
+	int timech = Timecontroller.getTimech();
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-
-//		MovieDao movieDao = MovieDao.getmovieDao();
-//		ReservationDao reservationDao = ReservationDao.getReservationDao();
-//
-//		Movie movie = movieDao.getmovie(mtitle);
-//		Reservation reservation = reservationDao.getreservation(mno);
-//
-//		lblselecttitle.setText(movie.getMtitle());
-//		lblselectgenre.setText(movie.getMgenre());
-//		lblselecttime.setText(reservation.getRtime());
-//		lblselectps.setText(String.valueOf(reservation.getPerson()));
-//		lblselectseat.setText(reservation.getMseat());
-//		lblprice.setText(String.valueOf(movie.getMprice()));
-
-	}
-
-	@FXML
-	private ImageView imgselectimg;
-
-	@FXML
-	private Label lblselecttitle;
-
-	@FXML
-	private Label lblselectgenre;
-
-	@FXML
-	private Label lblselecttime;
-
-	@FXML
-	private Label lblselectps;
-
-	@FXML
-	private Label lblselectseat;
-
-	@FXML
-	private Button btnclose;
-
-	@FXML
-	private Label lblprice;
-
-	@FXML
-	private Label lbloutline;
-
-	@FXML
-	void close(ActionEvent event) {
-		Alert alert = new Alert(AlertType.INFORMATION);
-		alert.setContentText("예매 완료");
-		alert.setHeaderText("예매 완료");
-		alert.showAndWait();
-
-		Alert alert2 = new Alert(AlertType.CONFIRMATION);
-		alert2.setContentText("종료하시겠습니까 ? [아니오를 누르면 첫화면으로 이동]");
-		alert2.setHeaderText("종료");
-
-		Optional<ButtonType> result = alert2.showAndWait();
-		if (result.get() == ButtonType.OK) {
-			Platform.exit();
-		} else {
-			try {
-			Stage stage = new Stage();
-			Parent parent = FXMLLoader.load(getClass().getResource("/FXML/Main.fxml"));
-			Scene scene = new Scene(parent);
-			stage.show();
-			
 		
-			}catch (Exception e) {
-				// TODO: handle exception
+		MovieDao movieDao = new MovieDao();
+		Movie movie = new Movie();
+		
+		if(buttonch == 1 ) {
+			if(timech == 1) {
+				
 			}
 		}
 
 	}
 
+	@FXML
+    private Button btnbefore;
+
+    @FXML
+    private Button btnconfirm;
+
+    @FXML
+    private ImageView imgmovieview;
+
+    @FXML
+    private Label lbltitle;
+
+    @FXML
+    private Label lblrating;
+
+    @FXML
+    private Label lblgenre;
+
+    @FXML
+    private Label lbloutline;
+
+    @FXML
+    private Label lblrnum;
+
+    @FXML
+    private Label lblprice;
+
+    @FXML
+    private Label lbltime;
+
+    @FXML
+    private Label lblsnum;
+
+    @FXML
+    void before(ActionEvent event) {
+    	Maincontroller.GetInstance().loadpage("seat");
+    }
+
+    @FXML
+    void confirm(ActionEvent event) {
+    	
+		
+		 
+    	Alert alert = new Alert( AlertType.CONFIRMATION);
+    	alert.setTitle("예매완료");
+    	alert.setHeaderText("예매가 완료 되었습니다.");
+    	alert.setContentText("처음으로 돌아가시겠습니까?  [확인 : 처음으로 / 취소 : 종료하기]");
+    	
+    	
+    	Optional<ButtonType> result = alert.showAndWait();
+    	if( result.get() == ButtonType.OK) {
+    		Maincontroller.GetInstance().loadpage("Main");
+    		
+    	}else {
+    		Platform.exit();
+    		
+    	}
+    	
+    	
+    	
+    }
+    
+
+   
 }

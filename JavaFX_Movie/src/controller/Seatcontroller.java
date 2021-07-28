@@ -3,10 +3,12 @@ package controller;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import java.util.concurrent.CountDownLatch;
 
 import DAO.MovieDao;
 import domain.Movie;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -25,6 +27,8 @@ import javafx.stage.Stage;
 
 public class Seatcontroller implements Initializable {
 	
+	
+	
 	 int moviecode1 = Maincontroller.getMoviecode1();
 	 int moviecode2 = Maincontroller.getMoviecode2();
 	 int moviecode3 = Maincontroller.getMoviecode3();
@@ -37,15 +41,35 @@ public class Seatcontroller implements Initializable {
 	 String movie_T3 = Timecontroller.getMovie_T3();
 	 
 	 int maxpeople = 0;
+	 
+	 
 		
 	 
 	 @FXML
-	    private AnchorPane pane;
+	 private AnchorPane pane;
 	 
 	 
 	 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
+		Button btn = new Button();
+		btn.setText("1");
+		btn.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent arg0) {
+				btn.setText("2");
+			}
+		});
+		 
+		 	AnchorPane pane = new AnchorPane();
+	        pane.getChildren().add(btn);
+
+
+
+
+		String[] seats = {};
 		
 		
 		MovieDao movieDao = new MovieDao();
@@ -280,13 +304,16 @@ public class Seatcontroller implements Initializable {
 	    @FXML
 	    void next(ActionEvent event) {
 	    	Maincontroller.GetInstance().loadpage("ReserveInfo");
+	    	if( maxpeople <= 0) { 
+	    		
+	    	}
 	    }
 	    
 
 	    @FXML
 	    void p_1(ActionEvent event) {
 	    	maxpeople = 1;
-	    }
+	    } 
 
 	    @FXML
 	    void p_2(ActionEvent event) {
@@ -320,6 +347,7 @@ public class Seatcontroller implements Initializable {
 	    
 	    @FXML
 	    void seat_a_1(ActionEvent event) {
+	    	
 	    	if( maxpeople == 0 ) {
 	    		Alert alert = new Alert(AlertType.INFORMATION);
 	    		alert.setTitle("POPCPORN CINEMA");
