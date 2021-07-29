@@ -43,7 +43,7 @@ public class Seatcontroller implements Initializable {
 	 int maxpeople = 0;
 	 
 	 
-		
+	 
 	 
 	 @FXML
 	 private AnchorPane pane;
@@ -63,8 +63,7 @@ public class Seatcontroller implements Initializable {
 			}
 		});
 		 
-		 	AnchorPane pane = new AnchorPane();
-	        pane.getChildren().add(btn);
+	    pane.getChildren().add(btn);
 
 
 
