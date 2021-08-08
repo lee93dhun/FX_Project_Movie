@@ -20,10 +20,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class Infocontroller implements Initializable {
+	
+	int moviecode1 = Maincontroller.GetInstance().getMoviecode1();
+	 int moviecode2 = Maincontroller.GetInstance().getMoviecode2();
+	 int moviecode3 = Maincontroller.GetInstance().getMoviecode3();
 	
 	int buttonch = Maincontroller.getbuttonch();
 	int timech = Timecontroller.getTimech();
@@ -36,10 +41,42 @@ public class Infocontroller implements Initializable {
 		MovieDao movieDao = new MovieDao();
 		Movie movie = new Movie();
 		
-		if(buttonch == 1 ) {
-			if(timech == 1) {
+if( buttonch == 1 ) {
+			
+			movie = movieDao.getmovie2(moviecode1);
+
+			lbltitle.setText(movie.getMtitle());
+			lblrating.setText(movie.getMrating());
+			lblgenre.setText(movie.getMgenre());
+			lbloutline.setText(movie.getMoutline());
+			Image image = new Image(movie.getMimage());
+			imgmovieview.setImage(image);
+			lblprice.setText(movie.getMprice()+" 원");
+			
+			
 				
-			}
+		}else if (  buttonch == 2 ) {
+			movie = movieDao.getmovie2(moviecode2);
+			
+			lbltitle.setText(movie.getMtitle());
+			lblrating.setText(movie.getMrating());
+			lblgenre.setText(movie.getMgenre());
+			lbloutline.setText(movie.getMoutline());
+			Image image = new Image(movie.getMimage());
+			imgmovieview.setImage(image);
+			lblprice.setText(movie.getMprice()+" 원");
+			
+			
+		}else if (  buttonch == 3 ) {
+			movie = movieDao.getmovie2(moviecode3);
+
+			lbltitle.setText(movie.getMtitle());
+			lblrating.setText(movie.getMrating());
+			lblgenre.setText(movie.getMgenre());
+			lbloutline.setText(movie.getMoutline());
+			Image image = new Image(movie.getMimage());
+			imgmovieview.setImage(image);
+			lblprice.setText(movie.getMprice()+" 원");
 		}
 
 	}

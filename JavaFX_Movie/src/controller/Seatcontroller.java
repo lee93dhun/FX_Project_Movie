@@ -42,7 +42,62 @@ public class Seatcontroller implements Initializable {
 	 
 	 int maxpeople = 0;
 	 
+	 //test
+	 MovieDao movieDao = new MovieDao();
+		Movie movie = new Movie();
 	 
+	 @FXML
+	    void p_1(ActionEvent event) {
+	    	maxpeople = 1;
+	    	
+	    	//test
+	    	lblprice.setText(movie.getMprice()*maxpeople+" 원");
+	    } 
+
+	    @FXML
+	    void p_2(ActionEvent event) {
+	    	maxpeople = 2;
+	    }
+
+	    @FXML
+	    void p_3(ActionEvent event) {
+	    	maxpeople = 3;
+	    }
+
+	    @FXML
+	    void p_4(ActionEvent event) {
+	    	maxpeople = 4;
+	    }
+	    
+	    @FXML
+	    void p_5(ActionEvent event) {
+	    	maxpeople = 5;
+	    }
+
+	    @FXML
+	    void p_6(ActionEvent event) {
+	    	maxpeople = 6;
+	    }
+	    
+	    @FXML
+	    void p_7(ActionEvent event) {
+	    	maxpeople = 7;
+	    }
+
+	    @FXML
+	    void p_8(ActionEvent event) {
+	    	maxpeople = 8;
+	    }
+
+	    @FXML
+	    void p_9(ActionEvent event) {
+	    	maxpeople = 9;
+	    }
+	    
+	    @FXML
+	    void p_10(ActionEvent event) {
+	    	maxpeople = 10;
+	    }
 	 
 	 
 	 @FXML
@@ -77,6 +132,9 @@ public class Seatcontroller implements Initializable {
 		if( buttonch == 1 ) {
 			movie = movieDao.getmovie2(moviecode1);
 			lblselectmovie.setText(movie.getMtitle());
+			//test
+			lblprice.setText(maxpeople+" 원");
+			
 			if( timech == 1) {
 				lblselecttime.setText(movie_T1);
 			}else if ( timech == 2 ) {
@@ -88,6 +146,10 @@ public class Seatcontroller implements Initializable {
 		}else if (  buttonch == 2 ) {
 			movie = movieDao.getmovie2(moviecode2);
 			lblselectmovie.setText(movie.getMtitle());
+			
+			//test
+			lblprice.setText(movie.getMprice()+" 원");
+			
 			if( timech == 1) {
 				lblselecttime.setText(movie_T1);
 			}else if ( timech == 2 ) {
@@ -99,6 +161,9 @@ public class Seatcontroller implements Initializable {
 		}else if (  buttonch == 3 ) {
 			movie = movieDao.getmovie2(moviecode3);
 			lblselectmovie.setText(movie.getMtitle());
+			//test
+			lblprice.setText(movie.getMprice()+" 원");
+			
 			if( timech == 1) {
 				lblselecttime.setText(movie_T1);
 			}else if ( timech == 2 ) {
@@ -130,6 +195,19 @@ public class Seatcontroller implements Initializable {
 
 	    @FXML
 	    private RadioButton rbtnp_6;
+	    
+	    @FXML
+	    private RadioButton rbtnp_7;
+
+	    @FXML
+	    private RadioButton rbtnp_8;
+
+	    @FXML
+	    private RadioButton rbtnp_9;
+
+	    @FXML
+	    private RadioButton rbtnp_10;
+
 ///////////////////////////////////////////////////////////SEAT A////////////////////////////
 	    @FXML
 	    private Button btnseat_a_1;
@@ -286,6 +364,9 @@ public class Seatcontroller implements Initializable {
 
 	    @FXML
 	    private Label lblselecttime;
+	    
+	    @FXML
+	    private Label lblprice;
 
 	    @FXML
 	    private Button btnbefore;
@@ -309,35 +390,7 @@ public class Seatcontroller implements Initializable {
 	    }
 	    
 
-	    @FXML
-	    void p_1(ActionEvent event) {
-	    	maxpeople = 1;
-	    } 
-
-	    @FXML
-	    void p_2(ActionEvent event) {
-	    	maxpeople = 2;
-	    }
-
-	    @FXML
-	    void p_3(ActionEvent event) {
-	    	maxpeople = 3;
-	    }
-
-	    @FXML
-	    void p_4(ActionEvent event) {
-	    	maxpeople = 4;
-	    }
-	    
-	    @FXML
-	    void p_5(ActionEvent event) {
-	    	maxpeople = 5;
-	    }
-
-	    @FXML
-	    void p_6(ActionEvent event) {
-	    	maxpeople = 6;
-	    }
+	   
 	    
 ///////////////////////////////////////////////////////////SEAT A////////////////////////////
 	    
