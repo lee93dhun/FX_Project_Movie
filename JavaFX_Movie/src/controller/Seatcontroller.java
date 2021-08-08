@@ -42,26 +42,22 @@ public class Seatcontroller implements Initializable {
 	 
 	 int maxpeople = 0;
 	 
-	 //test
-	 MovieDao movieDao = new MovieDao();
-		Movie movie = new Movie();
-	 
 	 @FXML
 	    void p_1(ActionEvent event) {
 	    	maxpeople = 1;
 	    	
-	    	//test
-	    	lblprice.setText(movie.getMprice()*maxpeople+" 원");
 	    } 
 
 	    @FXML
 	    void p_2(ActionEvent event) {
 	    	maxpeople = 2;
+	    	System.out.println("인원2");
 	    }
 
 	    @FXML
 	    void p_3(ActionEvent event) {
 	    	maxpeople = 3;
+	    	System.out.println("인원3");
 	    }
 
 	    @FXML
@@ -132,8 +128,6 @@ public class Seatcontroller implements Initializable {
 		if( buttonch == 1 ) {
 			movie = movieDao.getmovie2(moviecode1);
 			lblselectmovie.setText(movie.getMtitle());
-			//test
-			lblprice.setText(maxpeople+" 원");
 			
 			if( timech == 1) {
 				lblselecttime.setText(movie_T1);
@@ -143,6 +137,8 @@ public class Seatcontroller implements Initializable {
 				lblselecttime.setText(movie_T3);
 			}
 			
+			//test
+			lblprice.setText(movie.getMprice() * maxpeople+" 원");
 		}else if (  buttonch == 2 ) {
 			movie = movieDao.getmovie2(moviecode2);
 			lblselectmovie.setText(movie.getMtitle());

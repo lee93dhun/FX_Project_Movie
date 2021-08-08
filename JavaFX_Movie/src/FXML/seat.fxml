@@ -22,7 +22,7 @@
             <Font name="Arial" size="12.0" />
          </font>
       </Label>
-      <RadioButton fx:id="rbtnp_1" layoutX="325.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_1" text=" 1 ">
+      <RadioButton fx:id="rbtnp_1" layoutX="325.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_1" selected="true" text=" 1 ">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
