@@ -17,12 +17,12 @@
             <Font name="Arial" size="31.0" />
          </font>
       </Label>
-      <Label layoutX="137.0" layoutY="410.0" prefHeight="17.0" prefWidth="65.0" text="인원선택">
+      <Label layoutX="137.0" layoutY="390.0" prefHeight="17.0" prefWidth="65.0" text="인원선택">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </Label>
-      <RadioButton fx:id="rbtnp_1" layoutX="325.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_1" selected="true" text=" 1 ">
+      <RadioButton fx:id="rbtnp_1" layoutX="325.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_1" text=" 1 ">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
@@ -30,420 +30,420 @@
             <ToggleGroup fx:id="select_p" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_2" layoutX="365.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_2" text=" 2 " toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_2" layoutX="365.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_2" text=" 2 " toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_3" layoutX="405.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_3" text=" 3 " toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_3" layoutX="405.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_3" text=" 3 " toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_4" layoutX="445.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_4" text=" 4 " toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_4" layoutX="445.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_4" text=" 4 " toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_5" layoutX="485.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_5" text="5" toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_5" layoutX="485.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_5" text="5" toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_6" layoutX="525.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_6" text="6" toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_6" layoutX="525.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_6" text="6" toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_7" layoutX="565.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_7" text="7" toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_7" layoutX="565.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_7" text="7" toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_8" layoutX="605.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_8" text="8" toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_8" layoutX="605.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_8" text="8" toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_9" layoutX="645.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_9" text="9" toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_9" layoutX="645.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_9" text="9" toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbtnp_10" layoutX="685.0" layoutY="409.0" mnemonicParsing="false" onAction="#p_10" text="10" toggleGroup="$select_p">
+      <RadioButton fx:id="rbtnp_10" layoutX="685.0" layoutY="390.0" mnemonicParsing="false" onAction="#p_10" text="10" toggleGroup="$select_p">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <Label layoutX="70.0" layoutY="91.0" text="A">
+      <Label layoutX="70.0" layoutY="84.0" text="A">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="141.0" text="B">
+      <Label layoutX="70.0" layoutY="134.0" text="B">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="191.0" text="C">
+      <Label layoutX="70.0" layoutY="184.0" text="C">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="241.0" text="D">
+      <Label layoutX="70.0" layoutY="234.0" text="D">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="291.0" text="E">
+      <Label layoutX="70.0" layoutY="284.0" text="E">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="btnseat_a_1" alignment="CENTER" layoutX="110.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
+      <Button fx:id="btnseat_a_1" alignment="CENTER" layoutX="110.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_2" alignment="CENTER" layoutX="160.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
+      <Button fx:id="btnseat_a_2" alignment="CENTER" layoutX="160.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_3" alignment="CENTER" layoutX="250.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
+      <Button fx:id="btnseat_a_3" alignment="CENTER" layoutX="250.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_4" alignment="CENTER" layoutX="300.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
+      <Button fx:id="btnseat_a_4" alignment="CENTER" layoutX="300.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_5" alignment="CENTER" layoutX="350.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
+      <Button fx:id="btnseat_a_5" alignment="CENTER" layoutX="350.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_6" alignment="CENTER" layoutX="400.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
+      <Button fx:id="btnseat_a_6" alignment="CENTER" layoutX="400.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_7" alignment="CENTER" layoutX="450.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
+      <Button fx:id="btnseat_a_7" alignment="CENTER" layoutX="450.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_8" alignment="CENTER" layoutX="500.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
+      <Button fx:id="btnseat_a_8" alignment="CENTER" layoutX="500.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_9" alignment="CENTER" layoutX="590.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
+      <Button fx:id="btnseat_a_9" alignment="CENTER" layoutX="590.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_a_10" alignment="CENTER" layoutX="640.0" layoutY="80.0" mnemonicParsing="false" onAction="#seat_a_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
+      <Button fx:id="btnseat_a_10" alignment="CENTER" layoutX="640.0" layoutY="73.0" mnemonicParsing="false" onAction="#seat_a_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_1" alignment="CENTER" layoutX="110.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
+      <Button fx:id="btnseat_b_1" alignment="CENTER" layoutX="110.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_2" alignment="CENTER" layoutX="160.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
+      <Button fx:id="btnseat_b_2" alignment="CENTER" layoutX="160.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_3" alignment="CENTER" layoutX="250.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
+      <Button fx:id="btnseat_b_3" alignment="CENTER" layoutX="250.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_4" alignment="CENTER" layoutX="300.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
+      <Button fx:id="btnseat_b_4" alignment="CENTER" layoutX="300.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_5" alignment="CENTER" layoutX="350.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
+      <Button fx:id="btnseat_b_5" alignment="CENTER" layoutX="350.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_6" alignment="CENTER" layoutX="400.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
+      <Button fx:id="btnseat_b_6" alignment="CENTER" layoutX="400.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_7" alignment="CENTER" layoutX="450.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
+      <Button fx:id="btnseat_b_7" alignment="CENTER" layoutX="450.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_8" alignment="CENTER" layoutX="500.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
+      <Button fx:id="btnseat_b_8" alignment="CENTER" layoutX="500.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_9" alignment="CENTER" layoutX="590.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
+      <Button fx:id="btnseat_b_9" alignment="CENTER" layoutX="590.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_b_10" alignment="CENTER" layoutX="640.0" layoutY="130.0" mnemonicParsing="false" onAction="#seat_b_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
+      <Button fx:id="btnseat_b_10" alignment="CENTER" layoutX="640.0" layoutY="123.0" mnemonicParsing="false" onAction="#seat_b_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_1" alignment="CENTER" layoutX="110.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
+      <Button fx:id="btnseat_c_1" alignment="CENTER" layoutX="110.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_2" alignment="CENTER" layoutX="160.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
+      <Button fx:id="btnseat_c_2" alignment="CENTER" layoutX="160.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_3" alignment="CENTER" layoutX="250.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
+      <Button fx:id="btnseat_c_3" alignment="CENTER" layoutX="250.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_4" alignment="CENTER" layoutX="300.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
+      <Button fx:id="btnseat_c_4" alignment="CENTER" layoutX="300.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_5" alignment="CENTER" layoutX="350.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
+      <Button fx:id="btnseat_c_5" alignment="CENTER" layoutX="350.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_6" alignment="CENTER" layoutX="400.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
+      <Button fx:id="btnseat_c_6" alignment="CENTER" layoutX="400.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_7" alignment="CENTER" layoutX="450.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
+      <Button fx:id="btnseat_c_7" alignment="CENTER" layoutX="450.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_8" alignment="CENTER" layoutX="501.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
+      <Button fx:id="btnseat_c_8" alignment="CENTER" layoutX="501.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_9" alignment="CENTER" layoutX="590.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
+      <Button fx:id="btnseat_c_9" alignment="CENTER" layoutX="590.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_c_10" alignment="CENTER" layoutX="640.0" layoutY="180.0" mnemonicParsing="false" onAction="#seat_c_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
+      <Button fx:id="btnseat_c_10" alignment="CENTER" layoutX="640.0" layoutY="173.0" mnemonicParsing="false" onAction="#seat_c_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_1" alignment="CENTER" layoutX="110.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
+      <Button fx:id="btnseat_d_1" alignment="CENTER" layoutX="110.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_2" alignment="CENTER" layoutX="160.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
+      <Button fx:id="btnseat_d_2" alignment="CENTER" layoutX="160.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_3" alignment="CENTER" layoutX="250.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
+      <Button fx:id="btnseat_d_3" alignment="CENTER" layoutX="250.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_4" alignment="CENTER" layoutX="300.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
+      <Button fx:id="btnseat_d_4" alignment="CENTER" layoutX="300.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_5" alignment="CENTER" layoutX="350.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
+      <Button fx:id="btnseat_d_5" alignment="CENTER" layoutX="350.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_6" alignment="CENTER" layoutX="400.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
+      <Button fx:id="btnseat_d_6" alignment="CENTER" layoutX="400.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_7" alignment="CENTER" layoutX="450.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
+      <Button fx:id="btnseat_d_7" alignment="CENTER" layoutX="450.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_8" alignment="CENTER" layoutX="500.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
+      <Button fx:id="btnseat_d_8" alignment="CENTER" layoutX="500.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_9" alignment="CENTER" layoutX="590.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
+      <Button fx:id="btnseat_d_9" alignment="CENTER" layoutX="590.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_d_10" alignment="CENTER" layoutX="640.0" layoutY="230.0" mnemonicParsing="false" onAction="#seat_d_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
+      <Button fx:id="btnseat_d_10" alignment="CENTER" layoutX="640.0" layoutY="223.0" mnemonicParsing="false" onAction="#seat_d_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_1" alignment="CENTER" layoutX="110.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
+      <Button fx:id="btnseat_e_1" alignment="CENTER" layoutX="110.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="1">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_2" alignment="CENTER" layoutX="160.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
+      <Button fx:id="btnseat_e_2" alignment="CENTER" layoutX="160.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="2">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_3" alignment="CENTER" layoutX="250.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
+      <Button fx:id="btnseat_e_3" alignment="CENTER" layoutX="250.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="3">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_4" alignment="CENTER" layoutX="300.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
+      <Button fx:id="btnseat_e_4" alignment="CENTER" layoutX="300.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="4">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_5" alignment="CENTER" layoutX="350.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
+      <Button fx:id="btnseat_e_5" alignment="CENTER" layoutX="350.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="5">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_6" alignment="CENTER" layoutX="400.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
+      <Button fx:id="btnseat_e_6" alignment="CENTER" layoutX="400.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="6">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_7" alignment="CENTER" layoutX="450.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
+      <Button fx:id="btnseat_e_7" alignment="CENTER" layoutX="450.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="7">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_8" alignment="CENTER" layoutX="500.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
+      <Button fx:id="btnseat_e_8" alignment="CENTER" layoutX="500.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="8">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_9" alignment="CENTER" layoutX="590.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
+      <Button fx:id="btnseat_e_9" alignment="CENTER" layoutX="590.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="9">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnseat_e_10" alignment="CENTER" layoutX="640.0" layoutY="280.0" mnemonicParsing="false" onAction="#seat_e_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
+      <Button fx:id="btnseat_e_10" alignment="CENTER" layoutX="640.0" layoutY="273.0" mnemonicParsing="false" onAction="#seat_e_10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #CCCCCC; -fx-border-color: #333333;" text="10">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
@@ -453,34 +453,44 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Line endX="578.3333129882812" endY="3.0517578125E-5" layoutX="143.0" layoutY="340.0" startX="-78.3333511352539" startY="3.0517578125E-5" />
-      <Label layoutX="136.0" layoutY="353.0" text="선택한 영화" />
-      <Label layoutX="136.0" layoutY="381.0" text="선택한 시간" />
-      <Label fx:id="lblselectmovie" layoutX="326.0" layoutY="352.0" text="SELETED MOVIE">
+      <Line endX="578.3333129882812" endY="3.0517578125E-5" layoutX="143.0" layoutY="328.0" startX="-78.3333511352539" startY="3.0517578125E-5" />
+      <Label layoutX="136.0" layoutY="340.0" text="선택한 영화" />
+      <Label layoutX="136.0" layoutY="365.0" text="선택한 시간" />
+      <Label fx:id="lblselectmovie" layoutX="326.0" layoutY="339.0" text="SELETED MOVIE">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblselecttime" layoutX="326.0" layoutY="380.0" text="SELETED TIME">
+      <Label fx:id="lblselecttime" layoutX="326.0" layoutY="364.0" text="SELETED TIME">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btnbefore" layoutX="500.0" layoutY="465.0" mnemonicParsing="false" onAction="#before" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="이전" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="454.0">
+      <Button fx:id="btnbefore" layoutX="528.0" layoutY="465.0" mnemonicParsing="false" onAction="#before" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="이전" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="465.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnnext" layoutX="621.0" layoutY="465.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="다음" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="454.0">
+      <Button fx:id="btnnext" layoutX="637.0" layoutY="465.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-border-color: DC143C;" text="예매" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="465.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="137.0" layoutY="436.0" prefHeight="17.0" prefWidth="65.0" text="가격">
+      <Label layoutX="137.0" layoutY="440.0" prefHeight="17.0" prefWidth="65.0" text="가격">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="lblprice" layoutX="326.0" layoutY="436.0" text="PRICE x PERSONS">
+      <Label fx:id="lblprice" layoutX="326.0" layoutY="440.0" text="0 원">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="415.0" prefHeight="17.0" prefWidth="65.0" text="선택좌석">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblselectseat" layoutX="326.0" layoutY="414.0" prefHeight="17.0" prefWidth="101.0" text="SELECT SEAT">
          <font>
             <Font name="Arial" size="14.0" />
          </font>

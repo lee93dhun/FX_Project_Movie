@@ -32,6 +32,8 @@ public class Infocontroller implements Initializable {
 	
 	int buttonch = Maincontroller.getbuttonch();
 	int timech = Timecontroller.getTimech();
+	
+	int maxpeople = Seatcontroller.GetInstance().getmaxpeople();
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -51,7 +53,7 @@ if( buttonch == 1 ) {
 			lbloutline.setText(movie.getMoutline());
 			Image image = new Image(movie.getMimage());
 			imgmovieview.setImage(image);
-			lblprice.setText(movie.getMprice()+" 원");
+			lblprice.setText(movie.getMprice()*maxpeople+" 원");
 			
 			
 				
@@ -64,7 +66,7 @@ if( buttonch == 1 ) {
 			lbloutline.setText(movie.getMoutline());
 			Image image = new Image(movie.getMimage());
 			imgmovieview.setImage(image);
-			lblprice.setText(movie.getMprice()+" 원");
+			lblprice.setText(movie.getMprice()*maxpeople+" 원");
 			
 			
 		}else if (  buttonch == 3 ) {
@@ -76,7 +78,7 @@ if( buttonch == 1 ) {
 			lbloutline.setText(movie.getMoutline());
 			Image image = new Image(movie.getMimage());
 			imgmovieview.setImage(image);
-			lblprice.setText(movie.getMprice()+" 원");
+			lblprice.setText(movie.getMprice()*maxpeople+" 원");
 		}
 
 	}
@@ -126,7 +128,7 @@ if( buttonch == 1 ) {
 		 
     	Alert alert = new Alert( AlertType.CONFIRMATION);
     	alert.setTitle("예매완료");
-    	alert.setHeaderText("예매가 완료 되었습니다.");
+    	alert.setHeaderText("예매가 .");
     	alert.setContentText("처음으로 돌아가시겠습니까?  [확인 : 처음으로 / 취소 : 종료하기]");
     	
     	
