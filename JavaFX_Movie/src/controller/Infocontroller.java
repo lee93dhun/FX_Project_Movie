@@ -31,7 +31,8 @@ public class Infocontroller implements Initializable {
 	 int moviecode3 = Maincontroller.GetInstance().getMoviecode3();
 	
 	int buttonch = Maincontroller.getbuttonch();
-	int timech = Timecontroller.getTimech();
+	
+	String timech = Timecontroller.getTimech();
 	
 	int maxpeople = Seatcontroller.GetInstance().getmaxpeople();
 
@@ -55,6 +56,8 @@ if( buttonch == 1 ) {
 			imgmovieview.setImage(image);
 			lblprice.setText(movie.getMprice()*maxpeople+" 원");
 			
+			lbltime.setText(timech);
+			
 			
 				
 		}else if (  buttonch == 2 ) {
@@ -68,6 +71,7 @@ if( buttonch == 1 ) {
 			imgmovieview.setImage(image);
 			lblprice.setText(movie.getMprice()*maxpeople+" 원");
 			
+			lbltime.setText(timech);
 			
 		}else if (  buttonch == 3 ) {
 			movie = movieDao.getmovie2(moviecode3);
@@ -79,6 +83,8 @@ if( buttonch == 1 ) {
 			Image image = new Image(movie.getMimage());
 			imgmovieview.setImage(image);
 			lblprice.setText(movie.getMprice()*maxpeople+" 원");
+			
+			lbltime.setText(timech);
 		}
 
 	}

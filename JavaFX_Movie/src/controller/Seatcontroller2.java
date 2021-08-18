@@ -23,15 +23,17 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class Seatcontroller implements Initializable {
+public class Seatcontroller2 implements Initializable {
 	
-	private static Seatcontroller instance;
-	public Seatcontroller() {
+	private static Seatcontroller2 instance;
+	public Seatcontroller2() {
 		instance = this;
 	}
-	public static Seatcontroller GetInstance() {	
+	public static Seatcontroller2 GetInstance() {	
 		return instance;
 	}
 	 int moviecode1 = Maincontroller.getMoviecode1();
@@ -60,14 +62,16 @@ public class Seatcontroller implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		Button btn = new Button();
-		  btn.setText("seat2");
-		  btn.setOnAction(new EventHandler<ActionEvent>() {
-		  
-			  @Override public void handle(ActionEvent arg0) {
-				  Maincontroller.GetInstance().loadpage("seat2");} });
-		  
-		  pane.getChildren().add(btn);
+		Button btn[] = new Button[10];
+		
+		for( int i=0; i<=btn.length; i++ ) {
+			
+			/*
+			 * btn.setText("1"); btn.setPrefSize(40, 40); btn.setLayoutX(110);
+			 * btn.setLayoutY(73); btn.setStyle("-fx-border-color:black;" +
+			 * "-fx-background-color: #FFFFFF"); pane.getChildren().add(btn);
+			 */
+		}
 		
 		if( buttonch == 1 ) {
 			movie = movieDao.getmovie2(moviecode1);

@@ -39,20 +39,10 @@ public class Timecontroller implements Initializable {
 	 static String movie_T2 = "";
 	 static String movie_T3 = "";
 	 
-	 public static int timech = 0;
+	 public static String timech = "";
 	 
-	 public static int getTimech() {
+	 public static String getTimech() {
 		return timech;
-	}
-	 
-	public static String getMovie_T1() {
-		return movie_T1;
-	}
-	public static String getMovie_T2() {
-		return movie_T2;
-	}
-	public static String getMovie_T3() {
-		return movie_T3;
 	}
 	 
 	 
@@ -60,14 +50,9 @@ public class Timecontroller implements Initializable {
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
 		MovieDao movieDao = new MovieDao();
-		
 		Movie movie = new Movie();
 		
-		timech =0;
-		
-		
 		if( buttonch == 1 ) {
-			
 			movie = movieDao.getmovie2(moviecode1);
 			
 			lbl_t_title.setText(movie.getMtitle());
@@ -113,7 +98,6 @@ public class Timecontroller implements Initializable {
 			btntime_3.setText("24 : 30");
 		}
 		
-		
 	}
 	@FXML
     private ImageView img_t_movie;
@@ -147,92 +131,90 @@ public class Timecontroller implements Initializable {
 
     @FXML
     private Button btnnext;
-    
 
-    @FXML
-    void before(ActionEvent event) {
-			
-			Maincontroller.GetInstance().loadpage("Main");
-			
-    }
-
-    @FXML
-    void next(ActionEvent event) {
-    	
-    	if( timech == 1 || timech ==2 || timech == 3) {
-    	
-    		Maincontroller.GetInstance().loadpage("seat");
-    	}else {
-    		Alert alert = new Alert(AlertType.INFORMATION);
-    		alert.setTitle("POPCPORN CINEMA");
-    		alert.setContentText("상영시간을 선택해주세요.");
-    		alert.show();
-    	}
-
-    }
     
-    
-    
-    public static String 색상1 = "-fx-border-color: #FFFFFF";
+    public static String 색상1 = "-fx-border-color: #DC143C";
     public static String 색상2 = "-fx-background-color: #FFFFFF";
     
     @FXML
     void time_1(ActionEvent event) {
-    	timech = 1;
+    	
     	btntime_1.setStyle(색상1);
     	btntime_2.setStyle(색상2);
     	btntime_3.setStyle(색상2);
     	
     	if( buttonch == 1) {
     		movie_T1 = "07 : 00";
+    		timech = movie_T1;
     	}
     	else if(buttonch == 2) {
     		movie_T1 = "09 : 00";
+    		timech = movie_T1;
     	}
     	else if(buttonch == 3) {
     		movie_T1 = "11 : 00";
+    		timech = movie_T1;
     	}
-    	
-    	
-
     }
 
     @FXML
     void time_2(ActionEvent event) {
-    	timech = 2;
       	btntime_1.setStyle(색상2);
     	btntime_2.setStyle(색상1);
     	btntime_3.setStyle(색상2);
     	
     	if( buttonch == 1) {
     		movie_T2 = "13 : 30";
+    		timech = movie_T2;
     	}
     	else if(buttonch == 2) {
     		movie_T2 = "16 : 00";
+    		timech = movie_T2;
     	}
     	else if(buttonch == 3) {
     		movie_T2 = "18 : 30";
+    		timech = movie_T2;
     	}
     }
 
     @FXML
     void time_3(ActionEvent event) {
-    	timech = 3;
       	btntime_1.setStyle(색상2);
     	btntime_2.setStyle(색상2);
     	btntime_3.setStyle(색상1);
     	
     	if( buttonch == 1) {
     		movie_T3 = "20 : 30";
+    		timech = movie_T3;
     	}
     	else if(buttonch == 2) {
     		movie_T3 = "22 : 30";
+    		timech = movie_T3;
     	}
     	else if(buttonch == 3) {
     		movie_T3 = "24 : 30";
+    		timech = movie_T3;
     	}
     }
 
+    @FXML
+    void before(ActionEvent event) {
+    	Maincontroller.GetInstance().loadpage("Main");
+    }
+    
+    @FXML
+    void next(ActionEvent event) {
+    	
+    	if( timech == "") {
+    		Alert alert = new Alert(AlertType.INFORMATION);
+    		alert.setTitle("POPCPORN CINEMA");
+    		alert.setHeaderText("알림");
+    		alert.setContentText("상영시간을 선택해주세요.");
+    		alert.show();
+    	}else {
+    		Maincontroller.GetInstance().loadpage("seat");
+    	}
+    }
 
 	
 	
