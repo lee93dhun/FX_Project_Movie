@@ -76,7 +76,7 @@ public class Seatcontroller implements Initializable {
 			lblselectmovie.setText(movie.getMtitle());
 			lblselecttime.setText(timech);
 			
-			
+			 
 		}else if (  buttonch == 2 ) {
 			movie = movieDao.getmovie2(moviecode2);
 			price = movie.getMprice();
