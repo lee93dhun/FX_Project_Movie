@@ -25,6 +25,8 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 public class Seatcontroller2 implements Initializable {
@@ -62,15 +64,19 @@ public class Seatcontroller2 implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		Button btn[] = new Button[10];
+		Button btn = new Button();
+		Font font = Font.font("Courier New", FontWeight.BOLD, 15);
+		btn.setText("1");
+		btn.setFont(font);
+		btn.setPrefSize(40, 40);
+		btn.setLayoutX(110);
+		btn.setLayoutY(73);
+		btn.setStyle("-fx-border-color:black;" +
+				"-fx-background-color: #FFFFFF"); 
+		pane.getChildren().add(btn);
 		
-		for( int i=0; i<=btn.length; i++ ) {
-			
-			/*
-			 * btn.setText("1"); btn.setPrefSize(40, 40); btn.setLayoutX(110);
-			 * btn.setLayoutY(73); btn.setStyle("-fx-border-color:black;" +
-			 * "-fx-background-color: #FFFFFF"); pane.getChildren().add(btn);
-			 */
+		for( int i=0; i<=10; i++ ) {
+			 
 		}
 		
 		if( buttonch == 1 ) {
