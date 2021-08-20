@@ -4,6 +4,8 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.concurrent.CountDownLatch;
+
+
 import DAO.MovieDao;
 import domain.Movie;
 import javafx.application.Platform;
@@ -23,6 +25,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.paint.Color;
@@ -65,65 +68,83 @@ public class Seatcontroller2 implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		Button[] btn =new Button[10];
-		String[] btntext= {"1","2","3","4","5","6","7","8","9","10"};
+		Button[] btn =new Button[50];
+		String[] btntext= {"1","2","3","4","5","6","7","8","9","10",
+							"1","2","3","4","5","6","7","8","9","10",
+							"1","2","3","4","5","6","7","8","9","10",
+							"1","2","3","4","5","6","7","8","9","10",
+							"1","2","3","4","5","6","7","8","9","10"};
+		
+		
 		Font font = Font.font("Courier New", FontWeight.BOLD, 15);
-		for(int i=0;i<10;i++) {
+		for(int i=0;i<50;i++) {
+			
 			btn[i] = new Button(btntext[i]);
-			btn[i].setVisible(true);//보이게
-			btn[i].setFont(font);//폰트설정
+			btn[i].setFont(font);
 			pane.getChildren().add(btn[i]);
 			btn[i].setPrefSize(40, 40);
-			btn[i].setLayoutX(80 + ((i+1)*55)); btn[i].setLayoutY(73);
+			
+			if( i<10  ) {
+				btn[i].setLayoutX(80 + ((i+1)*55)); btn[i].setLayoutY(73);
+			}else if( i< 20) {
+				btn[i].setLayoutX(80 + ((i-10)+1)*55); btn[i].setLayoutY(123);
+			}else if( i < 30) {
+				btn[i].setLayoutX(80 + ((i-20)+1)*55); btn[i].setLayoutY(173);
+			}else if( i < 40 ) {
+				btn[i].setLayoutX(80 + ((i-30)+1)*55); btn[i].setLayoutY(223);
+			}else if( i < 50 ) {
+				btn[i].setLayoutX(80 + ((i-40)+1)*55); btn[i].setLayoutY(273);
+			}
+			
+			/*Button btn =new Button();
+			
+			Font font = Font.font("Courier New", FontWeight.BOLD, 15);
+			
+			for(int i=0;i<50;i++) {
+				
+				btn.setText(String.valueOf(i));
+				btn.setFont(font);
+				btn.setPrefSize(40, 40);
+				pane.getChildren().add(btn);
+				if( i < 10 ) {
+					btn.setLayoutX(80 + ( (i+1)*55) ); btn.setLayoutY(73);
+				}else if( i < 20 ) {
+					btn.setLayoutX(80 + ( (i-10)+1)*55 ); btn.setLayoutY(123);
+				}else if( i < 30 ) {
+					btn.setLayoutX(80 + ( (i-20)+1)*55 ); btn.setLayoutY(173);
+				}else if( i < 40 ) {
+					btn.setLayoutX(80 + ( (i-30)+1)*55 ); btn.setLayoutY(223);
+				}else if( i < 50 ) {
+					btn.setLayoutX(80 + ( (i-40)+1)*55 ); btn.setLayoutY(273);
+				}
+				
+				*/
+				
+			/*
+			 * btna[i].setOnMouseClicked(new EventHandler<MouseEvent>() {
+			 * 
+			 * @Override public void handle(MouseEvent e) {
+			 * btna[i].setStyle("-fx-background-color: #FFFFFF"); }
+			 * 
+			 * });
+			 */
+			 
+				  
+			
+			
+			/*
+			 * btna[i].setOnAction(new EventHandler<ActionEvent>() {
+			 * 
+			 * @Override public void handle(ActionEvent event) { btna[i] = ; } });
+			 */
+			 
+			
+			
 		}
 		
-		for(int i=0;i<10;i++) {
-			btn[i] = new Button(btntext[i]);
-			btn[i].setVisible(true);//보이게
-			btn[i].setFont(font);//폰트설정
-			pane.getChildren().add(btn[i]);
-			btn[i].setPrefSize(40, 40);
-			btn[i].setLayoutX(80 + ((i+1)*55)); btn[i].setLayoutY(123);
-		}
-		
-		for(int i=0;i<10;i++) {
-			btn[i] = new Button(btntext[i]);
-			btn[i].setVisible(true);//보이게
-			btn[i].setFont(font);//폰트설정
-			pane.getChildren().add(btn[i]);
-			btn[i].setPrefSize(40, 40);
-			btn[i].setLayoutX(80 + ((i+1)*55)); btn[i].setLayoutY(173);
-		}
-		
-		for(int i=0;i<10;i++) {
-			btn[i] = new Button(btntext[i]);
-			btn[i].setVisible(true);//보이게
-			btn[i].setFont(font);//폰트설정
-			pane.getChildren().add(btn[i]);
-			btn[i].setPrefSize(40, 40);
-			btn[i].setLayoutX(80 + ((i+1)*55)); btn[i].setLayoutY(223);
-		}
-		
-		for(int i=0;i<10;i++) {
-			btn[i] = new Button(btntext[i]);
-			btn[i].setVisible(true);//보이게
-			btn[i].setFont(font);//폰트설정
-			pane.getChildren().add(btn[i]);
-			btn[i].setPrefSize(40, 40);
-			btn[i].setLayoutX(80 + ((i+1)*55)); btn[i].setLayoutY(273);
-		}
 		
 		
 		
-		/*
-		 * btn[1].setLayoutX(140); btn[1].setLayoutY(73); btn[2].setLayoutX(110);
-		 * btn[2].setLayoutY(73); btn[3].setLayoutX(140); btn[3].setLayoutY(73);
-		 * btn[4].setLayoutX(140); btn[4].setLayoutY(73); btn[5].setLayoutX(140);
-		 * btn[5].setLayoutY(73); btn[6].setLayoutX(140); btn[6].setLayoutY(73);
-		 * btn[7].setLayoutX(140); btn[7].setLayoutY(73); btn[8].setLayoutX(140);
-		 * btn[8].setLayoutY(73); btn[9].setLayoutX(140); btn[9].setLayoutY(73);
-		 * btn[10].setLayoutX(140); btn[10].setLayoutY(73);
-		 */
 		
 		/*	
 		Button btn = new Button(); 

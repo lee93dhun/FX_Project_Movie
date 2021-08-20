@@ -74,27 +74,27 @@
             <Font name="Arial" size="12.0" />
          </font>
       </RadioButton>
-      <Label layoutX="70.0" layoutY="84.0" text="A">
+      <Label layoutX="84.0" layoutY="84.0" text="A">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="134.0" text="B">
+      <Label layoutX="84.0" layoutY="134.0" text="B">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="184.0" text="C">
+      <Label layoutX="84.0" layoutY="184.0" text="C">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="234.0" text="D">
+      <Label layoutX="84.0" layoutY="234.0" text="D">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="284.0" text="E">
+      <Label layoutX="84.0" layoutY="284.0" text="E">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
